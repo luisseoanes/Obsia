@@ -33,15 +33,30 @@ val appModule = module {
 
     // ─── Domain Rules ─────────────────────────────────────────────────────────
     single {
-        val json = androidContext().assets.open("emergency_config.json").bufferedReader().use { it.readText() }
+        val json = try {
+            androidContext().assets.open("emergency_config.json").bufferedReader().use { it.readText() }
+        } catch (e: Exception) {
+            android.util.Log.e("ObsIA", "Error cargando emergency_config.json: ${e.message}")
+            """{"version":"1.0","categories":[]}"""
+        }
         EmergencyDetector(json)
     }
     single {
-        val json = androidContext().assets.open("emergency_clinical_rules.json").bufferedReader().use { it.readText() }
+        val json = try {
+            androidContext().assets.open("emergency_clinical_rules.json").bufferedReader().use { it.readText() }
+        } catch (e: Exception) {
+            android.util.Log.e("ObsIA", "Error cargando emergency_clinical_rules.json: ${e.message}")
+            """{"rules":[]}"""
+        }
         EmergencyClinicalRules(json)
     }
     single {
-        val json = androidContext().assets.open("routine_clinical_rules.json").bufferedReader().use { it.readText() }
+        val json = try {
+            androidContext().assets.open("routine_clinical_rules.json").bufferedReader().use { it.readText() }
+        } catch (e: Exception) {
+            android.util.Log.e("ObsIA", "Error cargando routine_clinical_rules.json: ${e.message}")
+            """{"rules":[]}"""
+        }
         RoutineClinicalRules(json)
     }
     single<LlmEngine> { com.upb.obsia.domain.NativeLlmEngine(get()) }

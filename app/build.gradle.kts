@@ -18,6 +18,10 @@ android {
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            abiFilters.add("arm64-v8a")
+        }
     }
 
     buildTypes {
@@ -41,6 +45,13 @@ android {
 
     kotlinOptions {
         jvmTarget = "11"
+    }
+
+    externalNativeBuild {
+        cmake {
+            path = file("../../modeloFinal/CMakeLists.txt")
+            version = "3.22.1"
+        }
     }
 
     // NOTA: El proyecto usa librerías nativas precompiladas en jniLibs/.

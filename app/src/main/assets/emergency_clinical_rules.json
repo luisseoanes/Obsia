@@ -10,6 +10,13 @@
         "empapo la toalla",
         "sangra sin parar",
         "atonia uterina",
+        "atonia",
+        "atonía",
+        "esta sangrando",
+        "sangrado postparto",
+        "sangrado posparto",
+        "sangrando postparto",
+        "sangrando posparto",
         "placenta previa",
         "desprendimiento",
         "dppni",
@@ -28,18 +35,21 @@
         "chorro de sangre"
       ],
       "title": "Hemorragia obstétrica",
-      "why": "La paciente está perdiendo sangre rápidamente. Sin atención inmediata puede entrar en shock en minutos y su vida corre peligro.",
-      "whats_happening": "El útero no está contrayendo correctamente después del parto, o hay una lesión que está sangrando internamente.",
+      "why": "La paciente está perdiendo sangre rápidamente. Sin intervención inmediata puede entrar en shock hipovolémico en minutos con riesgo de muerte.",
+      "whats_happening": "Causa más frecuente postparto: atonía uterina (70% de los casos). Otras causas: lesiones del canal del parto, retención de restos placentarios, placenta previa o DPPNI en el preparto, trastornos de la coagulación.",
       "danger_level": "CRÍTICO — riesgo de muerte en menos de 30 minutos sin atención médica.",
       "immediate_steps": [
-        "Llame al 123 ahora mismo. No espere.",
-        "Acueste a la paciente boca arriba y levante sus piernas 30 cm con almohadas.",
-        "Si el sangrado es externo, presione firmemente con tela limpia sin soltar.",
-        "Si tuvo parto reciente, masajee suavemente el abdomen bajo en círculos.",
-        "Manténgala abrigada y hablándole para que no pierda el conocimiento."
+        "Active el Código Rojo Obstétrico si está en una institución de salud.",
+        "Llame al 123 si está fuera de una institución. No espere.",
+        "Evalúe nivel de shock: FC >100 lpm, TA sistólica <90 mmHg, llenado capilar >2 seg y palidez son signos de shock clase II-III.",
+        "Canalice dos venas periféricas calibre 16-18G e inicie reposición con cristaloides (SSN 0.9% o Lactato de Ringer) mientras consigue sangre.",
+        "Uterotónicos (atonía uterina — primera causa): 1ª línea: oxitocina 10 UI IV lento o IM de inmediato. 2ª línea si no responde en 5-10 min: misoprostol 800 mcg sublingual o rectal. Alternativa: metilergometrina 0.2 mg IM (contraindicada si HTA). 3ª línea: carbetocina 100 mcg IV o ácido tranexámico 1 g IV en 10 min (adyuvante siempre). No demorar la escalada de utero-tónicos.",
+        "Masajee el fondo uterino en forma bimanual para estimular la contracción si el útero está blando (signo de atonía).",
+        "Si el sangrado es de origen en canal blando, comprima con tela limpia y firme mientras traslada.",
+        "Mantenga a la paciente abrigada, en decúbito supino con miembros inferiores elevados 30 cm."
       ],
-      "escalates_when": "Si se desmaya, deja de responder, sus labios se ponen morados, o el sangrado no para en 5 minutos.",
-      "disclaimer": "⚠️ Esta información es solo de apoyo. Únicamente un médico puede tratar esta emergencia. No reemplaza atención profesional urgente."
+      "escalates_when": "Si la paciente entra en shock (pérdida >1000 mL estimada, FC >120 lpm, TA <90/60 mmHg), si el útero no responde a uterotónicos, si hay sospecha de coagulopatía (sangre sin coágulos), o si el sangrado no cede en 10 minutos con medidas iniciales.",
+      "disclaimer": "⚠️ Esta información es de apoyo clínico. Actúe según los protocolos de su institución. No reemplaza la evaluación médica presencial urgente."
     },
     {
       "id": "E002",
@@ -70,18 +80,21 @@
         "tuvo como tres ataques seguidos"
       ],
       "title": "Convulsiones / Eclampsia",
-      "why": "Las convulsiones en una embarazada o recién parida son una emergencia neurológica grave. Pueden causar daño cerebral o muerte si no se atienden de inmediato.",
-      "whats_happening": "La presión arterial muy alta está afectando el cerebro. Esto se llama eclampsia y es una de las principales causas de muerte materna.",
-      "danger_level": "CRÍTICO — requiere medicación intravenosa urgente que solo puede administrar un médico.",
+      "why": "Las convulsiones en una embarazada o puérpera son una emergencia neurológica grave por eclampsia hasta que se demuestre lo contrario. Pueden causar daño cerebral, aspiración, desprendimiento de placenta o muerte si no se tratan de inmediato.",
+      "whats_happening": "La hipertensión severa produce vasoespasmo cerebral y edema, desencadenando la convulsión eclámptica. Es una de las tres principales causas de muerte materna a nivel mundial.",
+      "danger_level": "CRÍTICO — requiere neuroprotección con sulfato de magnesio IV y control de la TA. Solo administrado por personal médico.",
       "immediate_steps": [
-        "Llame al 123 inmediatamente.",
-        "No sujete a la paciente ni meta nada en su boca durante la convulsión.",
-        "Aleje objetos con los que pueda golpearse.",
-        "Cuando pare la convulsión, gírela suavemente al lado izquierdo.",
-        "Registre cuánto duró la convulsión para informar al médico."
+        "Llame al 123 inmediatamente y active el equipo de emergencia obstétrica si está en institución.",
+        "Durante la convulsión: no sujete a la paciente, no introduzca nada en la boca, aleje objetos con los que pueda golpearse.",
+        "Posicione en decúbito lateral izquierdo al ceder la convulsión para reducir riesgo de aspiración.",
+        "Asegure y proteja la vía aérea — aspire secreciones si tiene equipo disponible.",
+        "Si dispone de sulfato de magnesio (MgSO4): carga IV de 4-6 g en solución glucosada al 5% en 15-20 minutos como neuroprotección y prevención de recurrencia. Mantenimiento: 1-2 g/hora IV.",
+        "Monitorice signos de toxicidad por magnesio: abolición del reflejo rotuliano (nivel sérico >7 mEq/L), bradipnea (<12 rpm), oliguria. Antídoto: gluconato de calcio 1g IV.",
+        "Si la TA es ≥160/110 mmHg: inicie antihipertensivo de acción rápida (labetalol 20 mg IV, o hidralacina 5 mg IV, o nifedipino 10 mg VO si no hay acceso IV).",
+        "Registre la duración de cada convulsión y el intervalo entre ellas para informar al equipo de soporte."
       ],
-      "escalates_when": "Si la convulsión dura más de 5 minutos, si tiene varias seguidas, o si no recupera el conocimiento después.",
-      "disclaimer": "⚠️ Esta información es solo de apoyo. Únicamente un médico puede tratar esta emergencia. No reemplaza atención profesional urgente."
+      "escalates_when": "Si la convulsión dura más de 5 minutos (estatus eclámptico), si ocurren más de dos episodios a pesar del MgSO4, si la paciente no recupera el estado de conciencia entre convulsiones, o si hay signos de síndrome HELLP (plaquetas <100.000, transaminasas elevadas, hemólisis).",
+      "disclaimer": "⚠️ Esta información es de apoyo clínico. Actúe según los protocolos de su institución. No reemplaza la evaluación médica presencial urgente."
     },
     {
       "id": "E003",
@@ -115,18 +128,21 @@
         "hinchazón repentina de cara"
       ],
       "title": "Crisis hipertensiva en embarazo",
-      "why": "Una presión de 160/110 o más en una embarazada puede causar convulsiones, derrame cerebral o desprendimiento de la placenta en minutos.",
-      "whats_happening": "Los vasos sanguíneos están bajo una presión extrema. El cerebro y la placenta están en riesgo inmediato.",
-      "danger_level": "CRÍTICO — necesita medicación para bajar la presión de forma controlada. No intente bajarla sin indicación médica.",
+      "why": "Una TA ≥160/110 mmHg sostenida en gestante o puérpera puede causar accidente cerebrovascular hemorrágico, desprendimiento de placenta o eclampsia. La ventana de tiempo para evitar daño neurológico grave es de 30-60 minutos.",
+      "whats_happening": "Vasoespasmo severo en preeclampsia con cifras tensionales en rango de severidad. El cerebro, la placenta y el riñón están en riesgo inmediato de hipoperfusión o hiperperfusión.",
+      "danger_level": "CRÍTICO — meta: reducir TA sistólica por debajo de 160 mmHg en los próximos 30-60 minutos de forma controlada.",
       "immediate_steps": [
-        "Llame al 123 inmediatamente.",
-        "Acueste a la paciente sobre su lado izquierdo.",
-        "NO le dé medicamentos para la presión sin indicación médica.",
-        "Manténgala en reposo absoluto, sin ruidos fuertes ni luces intensas.",
-        "Si tiene tensiómetro, mida cada 5 minutos y anote los valores para el médico."
+        "Confirme la TA en dos tomas separadas 15 minutos en la misma extremidad. Si ≥160/110 mmHg, inicie tratamiento sin demora.",
+        "Llame al 123 y active el protocolo de emergencia obstétrica en su institución.",
+        "Primera línea antihipertensiva: labetalol 20 mg IV en 2 minutos; puede repetirse 40-80 mg c/10 min hasta máximo 300 mg. Alternativa: nifedipino 10-20 mg VO (NO sublingual — puede producir hipotensión brusca). Alternativa IV: hidralacina 5 mg IV lento c/20 min.",
+        "Meta de TA: sistólica 130-150 mmHg, diastólica 80-100 mmHg. Evite descensos bruscos que comprometan la perfusión fetal.",
+        "Coloque a la paciente en decúbito lateral izquierdo en reposo absoluto.",
+        "Inicie monitoreo fetal continuo (frecuencia cardíaca fetal) — el vasoespasmo puede comprometer la perfusión placentaria.",
+        "Valore inicio profiláctico de MgSO4 si hay criterios de severidad (cefalea, escotomas, epigastralgia, hiperreflexia).",
+        "No administre antihipertensivos no indicados sin supervisión médica — la hipotensión iatrogénica puede ser tan peligrosa como la hipertensión."
       ],
-      "escalates_when": "Si empieza a convulsionar, si pierde la visión, si tiene dolor muy fuerte en la parte alta del abdomen, o si deja de responder.",
-      "disclaimer": "⚠️ Esta información es solo de apoyo. Únicamente un médico puede tratar esta emergencia. No reemplaza atención profesional urgente."
+      "escalates_when": "Si la TA no responde al tratamiento en 30 minutos, si aparecen síntomas neurológicos (confusión, pérdida de visión, convulsión), si hay signos de HELLP, si la frecuencia cardíaca fetal es anormal (bradicardia <100 lpm o desaceleraciones tardías), o si se sospecha desprendimiento de placenta.",
+      "disclaimer": "⚠️ Esta información es de apoyo clínico. Actúe según los protocolos de su institución. No reemplaza la evaluación médica presencial urgente."
     },
     {
       "id": "E004",
@@ -152,19 +168,21 @@
         "antes pateaba mucho y ahora nada",
         "cuento menos de 10 movimientos en dos horas"
       ],
-      "title": "Ausencia de movimiento fetal",
-      "why": "Un bebé que deja de moverse puede estar en sufrimiento fetal. Cada minuto cuenta para detectar si el bebé necesita atención urgente.",
-      "whats_happening": "El bebé puede estar recibiendo menos oxígeno del normal. Esto puede ocurrir por problemas con la placenta o el cordón umbilical.",
-      "danger_level": "URGENTE — no es siempre una emergencia inmediata pero requiere evaluación médica en menos de 2 horas.",
+      "title": "Disminución o ausencia de movimiento fetal",
+      "why": "La disminución de los movimientos fetales es el signo más precoz y frecuente de compromiso del bienestar fetal. Requiere evaluación médica dentro de las 2 horas siguientes a la consulta.",
+      "whats_happening": "El feto puede estar en hipoxia por insuficiencia placentaria, compresión de cordón u otras causas. El movimiento fetal disminuye como mecanismo de ahorro de oxígeno antes de que se produzca acidosis fetal.",
+      "danger_level": "URGENTE — no siempre es una emergencia inmediata, pero requiere evaluación médica en menos de 2 horas.",
       "immediate_steps": [
-        "Acuéstese sobre el lado izquierdo en reposo durante 30 minutos.",
-        "Tome algo frío o dulce y espere movimientos del bebé.",
-        "Cuente los movimientos — menos de 10 en 2 horas es señal de alerta.",
-        "Si no siente movimiento después de 30 minutos, vaya a urgencias ahora.",
-        "Llame al 123 si además tiene sangrado, dolor fuerte o ruptura de fuente."
+        "Realice auscultación de frecuencia cardíaca fetal (FCF) de inmediato. FCF normal: 110-160 lpm. Bradicardia sostenida <100 lpm es emergencia — active traslado urgente.",
+        "Indique a la paciente que se recueste en decúbito lateral izquierdo 30 minutos e intente estimular los movimientos fetales (bebida fría o azucarada, estimulación sonora).",
+        "Si la FCF es normal y la paciente refiere menos de 10 movimientos en 2 horas: solicite monitoreo fetal electrónico (NST/CTG) de forma urgente.",
+        "Evalúe el NST: un NST reactivo (2 aceleraciones ≥15 lpm por ≥15 seg en 20 min) tiene valor predictivo negativo >99% de bienestar fetal en las siguientes 24h.",
+        "Si el NST es no reactivo o con desaceleraciones: solicite ecografía obstétrica urgente con perfil biofísico fetal y flujometría Doppler de arteria umbilical.",
+        "Valore el contexto clínico: gestación >41 semanas, RCIU conocido, oligohidramnios, diabetes o HTA materna aumentan significativamente el riesgo.",
+        "Si se confirma sufrimiento fetal agudo (Doppler con flujo reverso en diástole, perfil biofísico <4/10): prepare traslado a sala de partos y valoración de terminación del embarazo de urgencia."
       ],
-      "escalates_when": "Si después de 1 hora en reposo no siente ningún movimiento, o si aparece sangrado o dolor abdominal intenso.",
-      "disclaimer": "⚠️ Esta información es solo de apoyo. Únicamente un médico puede evaluar el bienestar fetal. No reemplaza atención profesional urgente."
+      "escalates_when": "Si la FCF es <100 lpm o >180 lpm de forma sostenida, si el NST es no reactivo con pérdida de variabilidad, si hay desaceleraciones tardías repetidas, si el Doppler muestra flujo ausente o reverso en arteria umbilical, o si la paciente refiere ausencia total de movimientos en las últimas 12 horas.",
+      "disclaimer": "⚠️ Esta información es de apoyo clínico. Actúe según los protocolos de su institución. No reemplaza la evaluación médica presencial urgente."
     },
     {
       "id": "E005",
@@ -195,18 +213,20 @@
         "opresion en el pecho"
       ],
       "title": "Dificultad respiratoria severa",
-      "why": "Una embarazada que no puede respirar bien puede tener una embolia pulmonar o edema pulmonar — ambas son emergencias con riesgo de muerte.",
-      "whats_happening": "Los pulmones no están recibiendo suficiente oxígeno. Esto afecta también al bebé directamente.",
+      "why": "Una embarazada con disnea severa puede tener tromboembolia pulmonar (TEP), edema agudo de pulmón por preeclampsia severa o cardiopatía — todas son emergencias con riesgo de paro cardiorrespiratorio.",
+      "whats_happening": "Los pulmones no oxigenan adecuadamente la sangre. El feto depende del aporte de oxígeno materno; la hipoxia materna compromete directamente el bienestar fetal.",
       "danger_level": "CRÍTICO — riesgo de paro cardiorrespiratorio sin atención inmediata.",
       "immediate_steps": [
-        "Llame al 123 inmediatamente.",
-        "Siente a la paciente incorporada, no acostada — es más fácil respirar así.",
-        "Afloje cualquier ropa ajustada en el pecho o cuello.",
-        "Mantenga el ambiente ventilado y con aire fresco.",
-        "No la deje sola y monitoree si responde y si sus labios se ponen morados."
+        "Llame al 123 inmediatamente y active el equipo de emergencia.",
+        "Coloque a la paciente en posición semisentada (cabecera a 45°) — nunca acostada si hay disnea ortopneica.",
+        "Administre oxígeno suplementario por mascarilla de reservorio a 10-15 L/min. Meta: SpO2 ≥95% (≥98% si hay sospecha de hipoxia fetal).",
+        "Monitorice: FC, FR, TA, SpO2 y FCF continuamente.",
+        "Evalúe la causa probable:\n  - TEP: taquicardia + disnea brusca + hipoxia sin fiebre + factores de riesgo (inmovilización, trombofilia, cesárea reciente). Si alta sospecha clínica y no hay contraindicación: considere heparina no fraccionada IV mientras se confirma.\n  - Edema agudo de pulmón: crepitantes bilaterales + TA elevada + antecedente de preeclampsia. Manejo: furosemida IV 20-40 mg + control tensional urgente.\n  - Asma severa: sibilancias + antecedente. Salbutamol nebulizado 2.5-5 mg + corticoides sistémicos.",
+        "Afoje cualquier ropa ajustada en tórax y cuello.",
+        "No deje sola a la paciente. Monitorice nivel de conciencia y coloración de labios y uñas."
       ],
-      "escalates_when": "Si sus labios o uñas se ponen morados, si pierde el conocimiento, o si deja de respirar.",
-      "disclaimer": "⚠️ Esta información es solo de apoyo. Únicamente un médico puede tratar esta emergencia. No reemplaza atención profesional urgente."
+      "escalates_when": "Si la SpO2 cae por debajo de 90% a pesar de O2, si hay cianosis central (labios o mucosas azules), si la paciente pierde el conocimiento, si la FC fetal se vuelve anormal, o si aparecen signos de paro cardiorrespiratorio inminente (pérdida de pulso, apnea).",
+      "disclaimer": "⚠️ Esta información es de apoyo clínico. Actúe según los protocolos de su institución. No reemplaza la evaluación médica presencial urgente."
     },
     {
       "id": "E006",
@@ -239,18 +259,20 @@
         "presentacion de nalgas en trabajo de parto avanzado"
       ],
       "title": "Urgencia del parto",
-      "why": "El cordón afuera, el líquido verde o un parto muy rápido sin atención médica pueden causar asfixia del bebé o complicaciones graves para la madre.",
-      "whats_happening": "El bebé está en una posición de riesgo o el parto está ocurriendo sin control médico. Cada minuto es crítico.",
-      "danger_level": "CRÍTICO — requiere atención médica o de partera entrenada de inmediato.",
+      "why": "El prolapso de cordón, el líquido meconial espeso, la rotura uterina o el parto precipitado sin atención médica tienen alta mortalidad perinatal y materna. Cada minuto de demora empeora el pronóstico.",
+      "whats_happening": "El bebé está en una situación de riesgo vital: puede haber compresión del cordón umbilical, asfixia por meconio, rotura del útero o parto sin control médico.",
+      "danger_level": "CRÍTICO — requiere atención médica o de partera entrenada de inmediato. Potencial de cesárea de emergencia.",
       "immediate_steps": [
-        "Llame al 123 inmediatamente e indique que es un parto de emergencia.",
-        "Si el cordón está afuera, NO lo empuje. Ponga a la madre en posición rodillas al pecho.",
-        "Si el bebé está saliendo, no detenga el parto — apoye la cabeza suavemente.",
-        "Si el líquido es verde o con mal olor, informe al 123 de inmediato.",
-        "Mantenga a la madre abrigada y tranquila hasta que llegue la ayuda."
+        "Llame al 123 inmediatamente e informe que es un parto de emergencia. Active el traslado urgente.",
+        "Prolapso de cordón umbilical: NO intente reintroducir el cordón. Coloque a la madre en posición genupectoral (rodillas en el pecho) o Trendelenburg para reducir la presión sobre el cordón. Si el cordón está fuera de la vagina, cúbralo con compresas húmedas y tibias para prevenir vasoespasmo. Esta es indicación de cesárea de emergencia inmediata.",
+        "Líquido amniótico meconial espeso (verde oscuro o café): prepare equipo de reanimación neonatal antes del nacimiento. Tenga perilla de succión lista. El meconio espeso puede causar síndrome de aspiración meconial.",
+        "Parto inminente (cabeza visible o ya coronando): no detenga el parto. Apoye la cabeza suavemente con ambas manos, pida a la madre respiraciones cortas (jadeos) para evitar empuje brusco. Tras la cabeza, verifique que el cordón no esté enrollado en el cuello antes de liberar los hombros.",
+        "Distocia de hombros (la cabeza salió pero los hombros no progresan): aplique maniobra de McRoberts (hiperflexión extrema de muslos sobre abdomen) + presión suprapúbica. NO tracción excesiva del cuello fetal.",
+        "Rotura uterina (dolor abdominal brusco + detención de las contracciones + FCF anormal + útero deja de palparse como tal): traslado INMEDIATO a quirófano. Canalice vías IV, inicie cristaloides.",
+        "Tras el parto: administre oxitocina 10 UI IM a la madre, controle el sangrado e identifique si la placenta está completa."
       ],
-      "escalates_when": "Si el bebé sale y no llora, si la madre sangra masivamente después del parto, o si el cordón está enrollado en el cuello del bebé.",
-      "disclaimer": "⚠️ Esta información es solo de apoyo. Únicamente un médico o partera entrenada puede atender un parto. No reemplaza atención profesional urgente."
+      "escalates_when": "Si el bebé nace y no llora ni respira en los primeros 30 segundos (inicie reanimación neonatal), si la madre sangra más de 500 mL tras el parto vaginal, si el cordón está enrollado al cuello y tenso, o si el parto no progresa en 10 minutos de pujos activos.",
+      "disclaimer": "⚠️ Esta información es de apoyo clínico. Actúe según los protocolos de su institución. No reemplaza la evaluación médica presencial urgente."
     }
   ]
 }

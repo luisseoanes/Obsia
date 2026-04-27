@@ -1,0 +1,172 @@
+[
+    {
+        "text": "Definición rápida HPP: posparto vaginal >500 cc o poscesárea >1000 cc. HPP masiva: >1000 cc en primeras 24 h. También considerar HPP si hay descenso ≥10% del hematocrito o sangrado asociado a inestabilidad hemodinámica (prioriza clínica sobre volumen estimado).",
+        "metadata": {
+            "source": "2. Guía de HPP Padrino (1).pdf",
+            "chunk_id": 100,
+            "word_count": 47,
+            "section_type": "Definición",
+            "clinical_topic": "Hemorragia"
+        }
+    },
+    {
+        "text": "Clasificación temporal: HPP temprana (0–24 h): atonía, trauma, retención/alteraciones placentarias. HPP tardía (24 h–6 semanas): retención de restos, infección, ulceraciones, enfermedad trofoblástica. Si hay hipoperfusión, activar plan de choque sin esperar confirmación etiológica.",
+        "metadata": {
+            "source": "2. Guía de HPP Padrino (1).pdf",
+            "chunk_id": 101,
+            "word_count": 57,
+            "section_type": "Clasificación",
+            "clinical_topic": "Hemorragia"
+        }
+    },
+    {
+        "text": "Etiología 4T (búsqueda sistemática): Tono (atonía/sobredistensión/fatiga uterina), Trauma (laceraciones, extensión cesárea, ruptura/inversión), Tejidos (retención restos, acretismo/previa/anomalías), Trombos (coagulopatías congénitas o adquiridas, CID, dilucional, anticoagulación).",
+        "metadata": {
+            "source": "2. Guía de HPP Padrino (1).pdf",
+            "chunk_id": 102,
+            "word_count": 53,
+            "section_type": "Clasificación",
+            "clinical_topic": "Hemorragia"
+        }
+    },
+    {
+        "text": "Índice de choque (IC) = FC / PAS. Normal 0.7–0.9. IC >0.9 sugiere HPP severa y se asocia a transfusión masiva. Etapas por IC: I <0.9; II 0.9–1.6; III >1.7; IV colapso cardiovascular. Complementos: lactato >2 = hipoperfusión; déficit de base >−6 = choque importante.",
+        "metadata": {
+            "source": "2. Guía de HPP Padrino (1).pdf",
+            "chunk_id": 103,
+            "word_count": 74,
+            "section_type": "Diagnóstico",
+            "clinical_topic": "Hemorragia"
+        }
+    },
+    {
+        "text": "Grado clínico de choque (orientación rápida): 500–1000 ml suele ser compensado; 1000–1500 ml choque leve; 1500–2000 ml moderado; >2000 ml severo con letargo/inconsciencia, llenado capilar >3 s, FC >120 y PAS <70. Úsalo para escalar reanimación y hemoderivados.",
+        "metadata": {
+            "source": "2. Guía de HPP Padrino (1).pdf",
+            "chunk_id": 104,
+            "word_count": 52,
+            "section_type": "Diagnóstico",
+            "clinical_topic": "Hemorragia"
+        }
+    },
+    {
+        "text": "Activación inmediata (Código Rojo Obstétrico): pedir ayuda y coordinar obstetricia, anestesia, UCI, sala, enfermería y banco de sangre. Asignar roles: líder + checklist; 3 áreas: Útero (control sangrado/4T/TANN/ balón/ cirugía), Cabeza (vía aérea/O2/estado mental/tiempos), Brazos (2 venas 14–18, labs, fluidos, sangre, uterotónicos).",
+        "metadata": {
+            "source": "2. Guía de HPP Padrino (1).pdf",
+            "chunk_id": 105,
+            "word_count": 74,
+            "section_type": "Protocolo",
+            "clinical_topic": "Hemorragia"
+        }
+    },
+    {
+        "text": "ABC y monitorización inicial: oxígeno alto flujo (máscara con reservorio, 10 L/min), elevar piernas/Trendelenburg, 2 accesos venosos periféricos gruesos (14–18). Monitorear FC, PA, SpO2 y diuresis horaria. Si inestable, usar transfusión rápida y calentamiento de fluidos/productos.",
+        "metadata": {
+            "source": "2. Guía de HPP Padrino (1).pdf",
+            "chunk_id": 106,
+            "word_count": 51,
+            "section_type": "Manejo",
+            "clinical_topic": "Hemorragia"
+        }
+    },
+    {
+        "text": "Laboratorios iniciales (HPP): hemoclasificación + pruebas cruzadas, hemograma, PT/PTT/fibrinógeno, BUN/creatinina y electrolitos. Repetición/monitoría según etapa (I–IV) y evolución clínica para detectar coagulopatía y guiar hemoderivados.",
+        "metadata": {
+            "source": "2. Guía de HPP Padrino (1).pdf",
+            "chunk_id": 107,
+            "word_count": 40,
+            "section_type": "Evaluación",
+            "clinical_topic": "Hemorragia"
+        }
+    },
+    {
+        "text": "Prevención (manejo activo del alumbramiento): uterotónico profiláctico + tracción controlada del cordón (si entrenado) + evaluar tono uterino cada 15 min por 2 h. Profilaxis recomendada: oxitocina 10 UI IV/IM (parto vaginal y cesárea). Si no hay oxitocina confiable: metilergometrina 0.2 mg IM (si NO HTA), misoprostol 400–600 μg VO o carbetocina 100 μg IM/IV. No masaje uterino sostenido si ya se dio oxitocina profiláctica.",
+        "metadata": {
+            "source": "2. Guía de HPP Padrino (1).pdf",
+            "chunk_id": 108,
+            "word_count": 98,
+            "section_type": "Prevención",
+            "clinical_topic": "Hemorragia"
+        }
+    },
+    {
+        "text": "Paquete de primera línea FIGO/OMS (aplicar rápido en TODA HPP): masaje uterino + uterotónico + ácido tranexámico + líquidos IV + examen del tracto genital + intensificación del cuidado. Incluye inspección de laceraciones/hematomas y revisión de placenta/membranas para descartar restos retenidos.",
+        "metadata": {
+            "source": "guia de hemorragia post parto FIGO español es-ES.pdf",
+            "chunk_id": 109,
+            "word_count": 53,
+            "section_type": "Manejo",
+            "clinical_topic": "Hemorragia"
+        }
+    },
+    {
+        "text": "Atonía uterina (manejo rápido): iniciar compresión/masaje bimanual inmediato. Uterotónicos según guía: oxitocina 40 unidades en 500cc de solución salina pasar a 60 cc hora por bomba; metilergonovina 0.2 mg IM, repetir a los 20 min; luego 0.2 mg cada 2–4 h hasta total 5 dosis (usar solo si NO trastorno hipertensivo). Misoprostol 800 μg (4 tabletas de 200 μg) sublingual o rectal. Si no responde, escalar a TANN/ balón/ cirugía.",
+        "metadata": {
+            "source": "2. Guía de HPP Padrino (1).pdf",
+            "chunk_id": 110,
+            "word_count": 78,
+            "section_type": "Manejo",
+            "clinical_topic": "Hemorragia"
+        }
+    },
+    {
+        "text": "TANN/NASG (traje antichoque no neumático): colocar de forma inmediata en cualquier paciente con HPP estadio II. Se usa como medida de estabilización para disminuir pérdida sanguínea y ganar tiempo para intervenciones definitivas o traslado, sin retrasar cirugía si el sangrado continúa.",
+        "metadata": {
+            "source": "2. Guía de HPP Padrino (1).pdf",
+            "chunk_id": 111,
+            "word_count": 44,
+            "section_type": "Manejo",
+            "clinical_topic": "Hemorragia"
+        }
+    },
+    {
+        "text": "Taponamiento uterino con balón: considerar temprano (Bakri o balón improvisado con condón + sonda según disponibilidad). Efectividad reportada ~85%. Útil como diagnóstico/terapia: si NO controla sangrado → indica necesidad de cirugía. Puede mantenerse hasta 24 h con oxitócicos y antibioticoterapia; retiro en nivel de mayor complejidad con quirófano y banco de sangre.",
+        "metadata": {
+            "source": "2. Guía de HPP Padrino (1).pdf",
+            "chunk_id": 112,
+            "word_count": 68,
+            "section_type": "Tratamiento",
+            "clinical_topic": "Hemorragia"
+        }
+    },
+    {
+        "text": "HPP refractaria (FIGO): 10–20% no responde a masaje + uterotónicos + TXA + fluidos. Atonía es causa subyacente frecuente (30–50%). En recursos limitados: usar medidas temporales para estabilizar/ganar tiempo: compresión bimanual, compresión aórtica externa, NASG/TANN y balón. Si se puede, escalar a cirugía para evitar muerte materna.",
+        "metadata": {
+            "source": "guia de hemorragia post parto FIGO español es-ES.pdf",
+            "chunk_id": 113,
+            "word_count": 69,
+            "section_type": "Tratamiento",
+            "clinical_topic": "Hemorragia"
+        }
+    },
+    {
+        "text": "Escalamiento quirúrgico (FIGO/OMS): si falla manejo conservador (uterotónicos/masaje/ balón), pasar a cirugía. Secuencia sugerida: primero técnicas conservadoras (p. ej., suturas compresivas) → si falla, ligadura de vasos uterinos/uteroováricos/hipogástricos → si persiste hemorragia potencialmente mortal, histerectomía subtotal o total.",
+        "metadata": {
+            "source": "guia de hemorragia post parto FIGO español es-ES.pdf",
+            "chunk_id": 114,
+            "word_count": 55,
+            "section_type": "Tratamiento",
+            "clinical_topic": "Hemorragia"
+        }
+    },
+    {
+        "text": "Hemoderivados (protocolo transfusión masiva): disponibilidad recomendada: 6 U glóbulos rojos (incluye 2 U O negativo), 6 U plasma, 1 aféresis de plaquetas (≈5–8 U) y 10 U crioprecipitado. Fibrinógeno es el marcador más sensible; predictor de severidad: <2 g/L se asocia fuertemente; considerar reposición si <2 g/dl y es obligatoria si <1 g/L. Guiar reemplazo transfusional con laboratorios durante fase de mantenimiento.",
+        "metadata": {
+            "source": "2. Guía de HPP Padrino (1).pdf",
+            "chunk_id": 115,
+            "word_count": 88,
+            "section_type": "Tratamiento",
+            "clinical_topic": "Hemorragia"
+        }
+    },
+    {
+        "text": "Checklist institucional: la lista de chequeo de HPP debe usarse en cada caso para estandarizar acciones, optimizar recursos y reducir omisiones. Toda paciente con HPP debe ser valorada por ginecología/obstetricia y por UCI según deterioro, y hospitalizarse en UAD/UACO/UCI según etapa y respuesta al manejo.",
+        "metadata": {
+            "source": "2. Guía de HPP Padrino (1).pdf",
+            "chunk_id": 116,
+            "word_count": 45,
+            "section_type": "Evaluación",
+            "clinical_topic": "Hemorragia"
+        }
+    }
+]

@@ -5,6 +5,8 @@ sealed class ClinicalResponse {
     data class Emergency(
         val title: String,
         val why: String,
+        val whatsHappening: String = "",
+        val dangerLevel: String = "",
         val immediateSteps: List<String>,
         val escalatesWhen: String,
         val urgencyLevel: UrgencyLevel = UrgencyLevel.EMERGENCY,
@@ -31,6 +33,9 @@ sealed class ClinicalResponse {
         val code: String,
         val message: String
     ) : ClinicalResponse()
+
+    /** Un fragmento de token generado por el LLM en tiempo real. */
+    data class StreamToken(val token: String) : ClinicalResponse()
 
     companion object {
         const val DISCLAIMER =

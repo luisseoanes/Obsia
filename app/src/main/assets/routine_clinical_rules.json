@@ -28,10 +28,10 @@
         "llevo semanas vomitando",
         "perdi peso por los vomitos"
       ],
-      "context": "Las náuseas ocurren por el aumento de la hormona hCG en las primeras semanas. Son normales en el 70-80% de los embarazos y generalmente mejoran después de la semana 12. Cuando son muy intensas y producen pérdida de peso se llama hiperemesis gravídica y requiere atención médica.",
-      "response": "Come en porciones pequeñas cada 2-3 horas. Evita olores fuertes y comidas grasosas. El jengibre natural puede ayudar. Mantente hidratada con líquidos fríos y sin gas. Las galletas de soda en ayunas antes de levantarte pueden reducir las náuseas matutinas.",
-      "when_to_consult": "Si vomitas más de 3 veces al día y no puedes retener líquidos, si pierdes más de 2 kg de peso, si la orina es muy oscura, o si hay sangre en el vómito.",
-      "disclaimer": "Esta respuesta es orientativa. Consulta siempre con tu médico tratante. No reemplaza criterio profesional."
+      "context": "Las náuseas y vómitos del embarazo (NVE) ocurren por el aumento de hCG y afectan al 70-80% de las gestantes. Generalmente remiten hacia la semana 12-14. La hiperemesis gravídica (HG) se define como vómitos persistentes con pérdida >5% del peso pregestacional, cetonuria y desequilibrio hidroelectrolítico.",
+      "response": "Manejo escalonado según severidad:\n\n1. NVE leve-moderada: Recomiende fraccionamiento de la dieta en 5-6 porciones pequeñas, evitar olores fuertes y alimentos grasos. Primera línea farmacológica: vitamina B6 (piridoxina) 10-25 mg c/8h VO; puede combinarse con doxilamina 10 mg si no mejora.\n\n2. NVE moderada-severa: Considere metoclopramida 10 mg c/8h VO o IM, u ondansetrón 4-8 mg c/8h (con precaución en primer trimestre por datos limitados de seguridad).\n\n3. Hiperemesis gravídica confirmada: Hospitalice para rehidratación IV con solución salina al 0.9%, corrección electrolítica (K+, Mg2+) y administre tiamina 100 mg IV antes de cualquier solución glucosada para prevenir encefalopatía de Wernicke. Suspenda vía oral hasta tolerancia.",
+      "when_to_consult": "Escale o refiera si: pérdida de peso >5% del peso pregestacional, cetonuria positiva en orina, creatinina elevada o alteraciones electrolíticas, vómitos con sangre o hematemesis, síntomas que persisten más allá de la semana 16 sin respuesta al tratamiento, o si se descarta causa secundaria (patología tiroidea, infección urinaria, hepatitis).",
+      "disclaimer": "Esta guía es de apoyo clínico basada en evidencia. El juicio médico del profesional tratante prevalece siempre sobre esta orientación."
     },
     {
       "id": "R002",
@@ -60,10 +60,10 @@
         "empiece tarde el acido folico",
         "suplementacion en gestacion"
       ],
-      "context": "El ácido fólico previene defectos del tubo neural del bebé y es más efectivo tomado desde antes de la concepción. El hierro previene anemia materna. El calcio y la vitamina D son esenciales para el desarrollo óseo del bebé. La deficiencia de estos nutrientes puede afectar gravemente el desarrollo fetal.",
-      "response": "Toma 400mcg de ácido fólico diarios desde antes de concebir y durante el primer trimestre. El hierro se absorbe mejor con jugo de naranja y alejado del calcio. Si el hierro produce estreñimiento, aumenta el consumo de agua y fibra. No suspendas los suplementos sin consultar a tu médico.",
-      "when_to_consult": "Si tienes náuseas muy fuertes con los suplementos que impiden tomarlos, si llevas más de 8 semanas de embarazo sin suplementación, o si tu médico no te ha ordenado controles de hemoglobina.",
-      "disclaimer": "Esta respuesta es orientativa. Consulta siempre con tu médico tratante. No reemplaza criterio profesional."
+      "context": "La suplementación en el embarazo sigue las recomendaciones del Ministerio de Salud de Colombia y la OMS. Los déficits de ácido fólico se asocian a defectos del tubo neural; los de hierro a anemia materna y restricción del crecimiento fetal; los de calcio a preeclampsia. La vitamina D es esencial para la mineralización ósea fetal.",
+      "response": "Esquema de suplementación según guías SGSSS Colombia:\n\n- Ácido fólico: 400 mcg/día desde al menos 1 mes preconcepción hasta semana 12 (4 mg/día si hay antecedente de defecto del tubo neural).\n- Hierro elemental: 60 mg/día desde la semana 16 en adelante. Indicar tomarlo en ayunas con jugo cítrico (mejora absorción) y separado del calcio al menos 2 horas.\n- Calcio: 1.200-1.500 mg/día desde semana 20 en poblaciones con bajo consumo lácteo o riesgo de preeclampsia (evidencia de reducción del 50% de preeclampsia severa).\n- Vitamina D: 600 UI/día; si hay déficit documentado, 1.000-2.000 UI/día hasta normalizar niveles.\n- Yodo: 150-200 mcg/día en zonas de déficit endémico.\n\nSi la paciente no tolera el hierro oral por estreñimiento: fraccione la dosis, aumente fibra y agua, o considere hierro polimaltosato que tiene mejor tolerancia digestiva.",
+      "when_to_consult": "Solicite hemograma de control en semana 28 y 36 para ajustar dosis de hierro. Escale si Hb <9 g/dL (considerar hierro IV), si persiste anemia refractaria (descartar déficit de B12, folato o talasemia), o si hay sospecha de malabsorción.",
+      "disclaimer": "Esta guía es de apoyo clínico basada en evidencia. El juicio médico del profesional tratante prevalece siempre sobre esta orientación."
     },
     {
       "id": "R003",
@@ -95,10 +95,10 @@
         "me tome una copa de vino",
         "probe un sorbo de cerveza embarazada"
       ],
-      "context": "Durante el embarazo el sistema inmune está más vulnerable y algunos alimentos pueden causar infecciones como listeria o toxoplasmosis que atraviesan la placenta y afectan gravemente al bebé. El alcohol no tiene dosis segura en el embarazo y puede causar síndrome alcohólico fetal.",
-      "response": "Evita completamente: alcohol en cualquier cantidad, carnes y pescados crudos o poco cocidos, sushi, ostras y mariscos crudos, quesos blandos no pasteurizados como brie o camembert, embutidos fríos sin calentar, paté, huevo crudo, y atún en lata más de 2 veces por semana. Limita la cafeína a menos de 200mg al día — equivale a una taza de café.",
-      "when_to_consult": "Si consumiste alguno de estos alimentos y tienes fiebre, escalofríos, diarrea intensa, dolor abdominal o síntomas gripales en las siguientes 48 horas.",
-      "disclaimer": "Esta respuesta es orientativa. Consulta siempre con tu médico tratante. No reemplaza criterio profesional."
+      "context": "Durante el embarazo la inmunosupresión relativa aumenta el riesgo de infecciones transmitidas por alimentos. Toxoplasma gondii atraviesa la placenta y puede causar daño neurológico o muerte fetal. Listeria monocytogenes tiene mortalidad perinatal del 20-30%. El alcohol no tiene dosis segura y puede causar síndrome alcohólico fetal (SAF), principal causa prevenible de discapacidad intelectual.",
+      "response": "Consejería alimentaria que debe indicar a la paciente:\n\nEvitar absolutamente:\n- Alcohol en cualquier cantidad (incluye cerveza y vino)\n- Carnes y pescados crudos o poco cocidos, sushi, ostras y mariscos crudos\n- Quesos blandos no pasteurizados (brie, camembert, roquefort)\n- Embutidos y fiambres fríos sin calentar (listeria)\n- Paté refrigerado\n- Huevo crudo o semicrudo\n- Atún enlatado: máximo 2 veces/semana por contenido de mercurio\n- Leche no pasteurizada\n\nLimitar: cafeína a <200 mg/día (equivale a 1-2 tazas de café)\n\nSi la paciente refiere exposición accidental a alcohol: indagar cantidad, frecuencia y semanas de gestación. Exposición aislada en cantidades bajas en primer trimestre tiene riesgo bajo pero no nulo; no hay nivel seguro establecido.",
+      "when_to_consult": "Sospeche infección por listeria o toxoplasma si la paciente presenta fiebre, escalofríos, cefalea, mialgias o síntomas gripales en las 48-72h posteriores a exposición alimentaria de riesgo. Solicite hemocultivo, serologías IgM/IgG para Toxoplasma y considere referencia a infectología. En exposición a alcohol repetida: derivar a trabajo social y seguimiento multidisciplinario.",
+      "disclaimer": "Esta guía es de apoyo clínico basada en evidencia. El juicio médico del profesional tratante prevalece siempre sobre esta orientación."
     },
     {
       "id": "R004",
@@ -126,10 +126,10 @@
         "ejercicio en tercer trimestre",
         "actividad fisica segura en gestacion"
       ],
-      "context": "El ejercicio moderado durante el embarazo reduce el riesgo de diabetes gestacional, preeclampsia y parto prematuro, mejora el sueño y prepara el cuerpo para el parto. La mayoría de mujeres sin complicaciones pueden y deben mantenerse activas durante todo el embarazo.",
-      "response": "Caminar 30 minutos diarios, natación y yoga prenatal son los más recomendados. Evita deportes de contacto, buceo, deportes con riesgo de caída, y ejercicios boca arriba después del segundo trimestre. Mantente hidratada y para si sientes dolor, mareos o contracciones. Si eras deportista antes, puedes continuar con menor intensidad.",
-      "when_to_consult": "Si durante o después del ejercicio sientes dolor abdominal, sangrado vaginal, dificultad para respirar en reposo, mareos intensos, contracciones regulares o disminución de movimientos fetales.",
-      "disclaimer": "Esta respuesta es orientativa. Consulta siempre con tu médico tratante. No reemplaza criterio profesional."
+      "context": "El ejercicio moderado durante el embarazo reduce en un 30-50% el riesgo de diabetes gestacional, preeclampsia y macrosomía. Mejora la tolerancia al parto y el bienestar materno. Las guías ACOG (2020) recomiendan 150 min/semana de actividad aeróbica de intensidad moderada en ausencia de contraindicaciones.",
+      "response": "Prescripción de actividad física:\n\nRecomendado: caminata, natación, yoga prenatal, ciclismo estacionario y pilates adaptado — 150 minutos/semana en sesiones de 30 min.\n\nContraindicaciones absolutas para ejercicio:\n- Placenta previa después de la semana 28\n- Incompetencia cervical o cerclaje\n- Amenaza de parto prematuro activa\n- Preeclampsia o hipertensión gestacional no controlada\n- Rotura prematura de membranas\n- Anemia severa (Hb <7 g/dL)\n- Gestación múltiple de alto orden (trillizos o más)\n\nContraindicaciones relativas (evaluar caso a caso):\n- Gemelos tras semana 28\n- Arritmia materna no controlada\n- Diabetes tipo 1 mal controlada\n- Obesidad mórbida o bajo peso severo\n\nEvitar: deportes de contacto, buceo, deportes con riesgo de caída, ejercicios en decúbito supino prolongado después de la semana 20.",
+      "when_to_consult": "Indique a la paciente suspender el ejercicio y consultar de inmediato si presenta: sangrado vaginal, disnea desproporcionada al esfuerzo, dolor torácico, contracciones regulares, cefalea intensa, mareos con pérdida de equilibrio o disminución de movimientos fetales durante o tras el ejercicio.",
+      "disclaimer": "Esta guía es de apoyo clínico basada en evidencia. El juicio médico del profesional tratante prevalece siempre sobre esta orientación."
     },
     {
       "id": "R005",
@@ -158,10 +158,10 @@
         "cuanto tiempo llevo sin control",
         "no tengo citas programadas"
       ],
-      "context": "El control prenatal permite detectar complicaciones a tiempo. La OMS recomienda mínimo 8 consultas durante el embarazo. En Colombia el esquema del SGSSS incluye controles en semanas clave con exámenes específicos en cada uno. Los controles perdidos aumentan el riesgo de complicaciones no detectadas.",
-      "response": "Las citas mínimas recomendadas son: semana 8-10 primera consulta con exámenes de laboratorio, semana 11-13 ecografía de primer trimestre y translucencia nucal, semana 18-20 ecografía morfológica obligatoria, semana 26 con curva de glucosa, semana 30, semana 34, semana 36, y semana 38-40. No faltes a ninguna.",
-      "when_to_consult": "Si llevas más de 4 semanas sin control prenatal, si aún no tienes la ecografía morfológica programada, si tu médico no te ha ordenado exámenes de laboratorio, o si tienes factores de riesgo como diabetes, hipertensión o embarazo múltiple.",
-      "disclaimer": "Esta respuesta es orientativa. Consulta siempre con tu médico tratante. No reemplaza criterio profesional."
+      "context": "El control prenatal estructurado permite detectar complicaciones antes de que se vuelvan críticas. La OMS (2016) recomienda mínimo 8 consultas. En Colombia el SGSSS establece un esquema con exámenes y ecografías en momentos específicos del embarazo, con clasificación de riesgo obstétrico en cada control.",
+      "response": "Esquema de control prenatal según SGSSS Colombia (mínimo 8 controles):\n\n- Semana 6-10 (1ª consulta): Historia clínica completa, clasificación de riesgo, exámenes de laboratorio (hemograma, grupo/Rh, VDRL, VIH, toxoplasma IgG/IgM, rubéola IgG, urocultivo, TSH, glicemia), inicio de suplementación.\n- Semana 11-13+6 (2ª consulta): Ecografía de primer trimestre + translucencia nucal + tamizaje combinado de aneuploidías si disponible.\n- Semana 18-22 (3ª consulta): Ecografía morfológica fetal obligatoria.\n- Semana 24-26 (4ª consulta): Curva de tolerancia a la glucosa 75g (2h), hemograma de control.\n- Semana 28-30 (5ª consulta): Evaluación de crecimiento fetal, inicio de recuento de movimientos fetales.\n- Semana 32-34 (6ª consulta): Ecografía de crecimiento y bienestar fetal si indicado.\n- Semana 36 (7ª consulta): Cultivo vagino-rectal para Streptococcus agalactiae (SGB), planificación del parto.\n- Semana 38-40 (8ª consulta): Evaluación de condiciones obstétricas, bienestar fetal, decisión de vía del parto.",
+      "when_to_consult": "Refiera a obstetricia de alto riesgo si: diabetes pregestacional o gestacional con mal control, HTA crónica o preeclampsia, cardiopatía materna, gestación múltiple, restricción de crecimiento intrauterino (RCIU), incompetencia cervical, antecedente de muerte perinatal, malformación fetal detectada, o paciente con más de 4 controles perdidos sin justificación.",
+      "disclaimer": "Esta guía es de apoyo clínico basada en evidencia. El juicio médico del profesional tratante prevalece siempre sobre esta orientación."
     },
     {
       "id": "R006",
@@ -190,10 +190,10 @@
         "varices embarazo",
         "pesadez en las piernas embarazo"
       ],
-      "context": "La hinchazón leve de pies y tobillos es normal en el embarazo, especialmente en el tercer trimestre, por el aumento del volumen sanguíneo y la presión del útero sobre las venas. Empeora al final del día y con el calor. Sin embargo, la hinchazón repentina de cara o manos puede ser señal de preeclampsia.",
-      "response": "Eleva los pies cuando estés sentada o acostada — idealmente por encima del nivel del corazón. Evita estar de pie por períodos largos sin moverte. Usa medias de compresión suaves desde por la mañana. Toma suficiente agua — reducir líquidos empeora la hinchazón. Caminar activa la circulación y ayuda a reducir el edema.",
-      "when_to_consult": "Si la hinchazón es repentina o muy marcada, si aparece en la cara, manos o labios, si viene acompañada de dolor de cabeza, visión borrosa o presión alta, o si un solo pie está mucho más hinchado que el otro.",
-      "disclaimer": "Esta respuesta es orientativa. Consulta siempre con tu médico tratante. No reemplaza criterio profesional."
+      "context": "El edema declive leve de miembros inferiores es fisiológico en el embarazo (presente en hasta el 80% de las gestantes en el tercer trimestre), producido por aumento del volumen plasmático y compresión de venas pélvicas. El edema patológico implica localización en cara, manos o generalizado, y puede ser manifestación de preeclampsia (siempre descartar proteinuria e HTA asociadas).",
+      "response": "Diferenciación clínica y manejo:\n\nEdema fisiológico (sin criterios de alarma): Recomiende elevación de miembros inferiores por encima del nivel cardíaco en reposo, deambulación frecuente para activar bomba muscular, medias de compresión graduada clase I (15-20 mmHg) desde la mañana, e hidratación adecuada (la restricción hídrica empeora la retención).\n\nEdema con signos de alarma — evaluar preeclampsia:\n- Mida TA (criterio: ≥140/90 mmHg en 2 tomas separadas 4h)\n- Solicite parcial de orina: proteinuria ≥300 mg/24h o proteinuria en tira reactiva 2+ es criterio diagnóstico\n- Evalúe síntomas de preeclampsia severa: cefalea intensa, escotomas, epigastralgia, hiperreflexia\n- Solicite perfil hepático, creatinina, hemograma (plaquetas) para descartar síndrome HELLP\n\nNo prescribir diuréticos en edema del embarazo sin diagnóstico de insuficiencia cardíaca confirmada — están contraindicados en el edema fisiológico.",
+      "when_to_consult": "Refiera o escale de urgencia si: TA ≥160/110 mmHg, proteinuria significativa, cefalea o síntomas neurológicos, plaquetas <100.000, transaminasas elevadas, o edema agudo de instalación súbita en cara y manos sin antecedente previo.",
+      "disclaimer": "Esta guía es de apoyo clínico basada en evidencia. El juicio médico del profesional tratante prevalece siempre sobre esta orientación."
     },
     {
       "id": "R007",
@@ -222,10 +222,10 @@
         "piernas inquietas embarazo",
         "sindrome de piernas inquietas gestacion"
       ],
-      "context": "Después de la semana 20 dormir boca arriba puede comprimir la vena cava inferior y reducir el flujo de sangre al bebé y al cerebro materno, causando mareos y disminución del aporte de oxígeno fetal. El decúbito lateral izquierdo mejora la circulación hacia la placenta y los riñones maternos.",
-      "response": "Duerme preferiblemente sobre el lado izquierdo con una almohada entre las rodillas y otra bajo el abdomen. Si te despiertas boca arriba no te alarmes — simplemente gírate. Una almohada de maternidad en forma de U puede ayudar mucho. Evita pantallas al menos 1 hora antes de dormir. Para los calambres nocturnos, estira suavemente la pantorrilla.",
-      "when_to_consult": "Si tienes insomnio severo que lleva más de 2 semanas y afecta tu funcionamiento diario, si el bebé se mueve menos de noche, si tienes ronquidos muy fuertes nuevos con pausas en la respiración, o si sientes hormigueo intenso en las piernas que no te deja descansar.",
-      "disclaimer": "Esta respuesta es orientativa. Consulta siempre con tu médico tratante. No reemplaza criterio profesional."
+      "context": "Desde la semana 20 el decúbito supino puede comprimir la vena cava inferior, reduciendo el retorno venoso y el gasto cardíaco hasta un 25%, con potencial disminución del flujo uteroplacentario. El decúbito lateral izquierdo optimiza la perfusión placentaria y la función renal materna. El síndrome de piernas inquietas (SPI) afecta al 20-26% de las gestantes y se asocia frecuentemente a deficiencia de hierro o folato.",
+      "response": "Orientación clínica y consejería:\n\nPosición al dormir: Recomiende decúbito lateral izquierdo con almohada entre rodillas y debajo del abdomen desde la semana 20. Si la paciente se despierta en supino, tranquilizarla — el propio malestar la despertará antes de que ocurra compromiso hemodinámico significativo.\n\nInsomnio: Higiene del sueño (horarios regulares, evitar pantallas 1 hora antes, temperatura fresca). Evite prescribir benzodiacepinas o hipnóticos en el embarazo salvo caso refractario documentado con valoración riesgo-beneficio.\n\nSíndrome de piernas inquietas: Primero descarte y corrija déficit de hierro (ferritina <50 ng/mL) y folato. Si es refractario: opciones de segunda línea incluyen clonazepam a dosis bajas o levodopa/carbidopa (uso off-label; valorar con neurología).\n\nApnea del sueño nueva o empeorada: Refiera para polisomnografía — la apnea no tratada se asocia a HTA gestacional y parto prematuro.",
+      "when_to_consult": "Escale si: insomnio severo >2 semanas afecta funcionamiento diario y no responde a medidas no farmacológicas, se sospecha apnea del sueño (ronquido intenso nuevo + pausas respiratorias referidas por acompañante), SPI refractario a corrección de déficits nutricionales, o si la paciente refiere disminución de movimientos fetales nocturnos.",
+      "disclaimer": "Esta guía es de apoyo clínico basada en evidencia. El juicio médico del profesional tratante prevalece siempre sobre esta orientación."
     },
     {
       "id": "R008",
@@ -250,7 +250,7 @@
         "conducto tapado",
         "conducto obstruido",
         "bebe no succiona bien",
-        "agarre del bebe al pecho",
+        "agarre del pecho",
         "posicion para amamantar",
         "cuanto tiempo amamantar",
         "cada cuanto dar el pecho",
@@ -262,10 +262,10 @@
         "sacaleche",
         "banco de leche"
       ],
-      "context": "La lactancia materna exclusiva los primeros 6 meses es la alimentación óptima para el bebé según la OMS. La leche materna contiene anticuerpos, factores de crecimiento y nutrientes perfectamente adaptados. La producción de leche funciona por oferta y demanda — entre más se da el pecho, más leche se produce. La mayoría de problemas de lactancia tienen solución con apoyo adecuado.",
-      "response": "Ofrece el pecho a demanda, cada 2-3 horas o cuando el bebé lo pida. Asegúrate de que el bebé agarre bien toda la areola, no solo el pezón — la boca debe estar bien abierta. El dolor intenso al amamantar generalmente indica mal agarre. Para las grietas, aplica unas gotas de tu propia leche al final de cada toma y déjala secar al aire. No uses jabón en los pezones.",
-      "when_to_consult": "Si tienes fiebre mayor de 38°C con dolor y enrojecimiento en el pecho puede ser mastitis y necesitas antibióticos. Si el bebé no recupera su peso de nacimiento en las primeras 2 semanas. Si tienes grietas que sangran o no cicatrizan. Si sientes un bulto duro y doloroso que no cede con el calor y el masaje.",
-      "disclaimer": "Esta respuesta es orientativa. Consulta siempre con tu médico o enfermera especialista en lactancia. No reemplaza criterio profesional."
+      "context": "La OMS recomienda lactancia materna exclusiva los primeros 6 meses y complementada hasta los 2 años. La producción de leche funciona por demanda-oferta: la frecuencia del estímulo determina el volumen producido. La mastitis puerperal se presenta en el 10% de las lactantes; si no se trata adecuadamente puede progresar a absceso que requiere drenaje quirúrgico.",
+      "response": "Guía clínica para los problemas de lactancia más frecuentes:\n\nBajo agarre / mal agarre: El dolor intenso al amamantar en ausencia de grietas generalmente indica que el bebé no cubre suficiente areola. Oriente corrección del agarre (boca bien abierta, mentón pegado al pecho, areola visible más por arriba que abajo). Refiera a consultora de lactancia certificada IBCLC si no mejora.\n\nGrietas en el pezón: Aplique leche materna al final de cada toma y deje secar al aire. Lanolina purificada tópica es segura. Evite jabón en el pezón. Si hay grietas que sangran y no cicatrizan en 5-7 días, valore infección secundaria (candidiasis — dolor urente bilateral — o Staphylococcus — costra amarillenta).\n\nMastitis puerperal: Fiebre >38°C con eritema, calor y dolor localizado en mama. Tratamiento: dicloxacilina 500 mg c/6h VO por 10-14 días o cefalexina 500 mg c/6h (alternativa si alergia a penicilina: clindamicina). Continuar lactancia o extracción activa — la suspensión empeora el cuadro y favorece absceso.\n\nAbsceso mamario: Fluctuación palpable, no responde a antibióticos en 48-72h. Requiere drenaje quirúrgico o aspiración ecográfica. Derivar a cirugía.\n\nHipogalactia: Primero descartar agarre incorrecto y frecuencia insuficiente. El mejor estimulante es la succión frecuente (mínimo 8-12 veces/24h). Si hay necesidad de suplementación con fórmula, indicarla sin culpabilizar a la madre.",
+      "when_to_consult": "Refiera a consultora de lactancia si el bebé no recupera peso de nacimiento en 2 semanas, si hay grietas que no cicatrizan, o si la madre no tolera continuar. Refiera a cirugía si se sospecha absceso. Descarte candidosis neonatal oral si hay dolor urente bilateral sin lesión visible en el pezón.",
+      "disclaimer": "Esta guía es de apoyo clínico basada en evidencia. El juicio médico del profesional tratante prevalece siempre sobre esta orientación."
     }
   ]
 }

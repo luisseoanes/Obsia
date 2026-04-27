@@ -1,0 +1,43 @@
+# Build (siempre compilar con: cmake -B build)
+build/
+out/
+cmake-build-*/
+
+# Generados de CMake en raíz (si se ejecutó cmake sin -B build)
+CMakeCache.txt
+cmake_install.cmake
+CMakeFiles/
+llama-build/
+ALL_BUILD.vcxproj
+ALL_BUILD.vcxproj.filters
+ZERO_CHECK.vcxproj
+ZERO_CHECK.vcxproj.filters
+INSTALL.vcxproj
+INSTALL.vcxproj.filters
+obgyn-chatbot.slnx
+*.sln
+x64/
+
+# Generados en app/ (proyectos VS generados por CMake)
+app/CMakeFiles/
+app/cmake_install.cmake
+app/INSTALL.vcxproj
+app/INSTALL.vcxproj.filters
+app/obgyn_chat.vcxproj
+app/obgyn_chat.vcxproj.filters
+
+# IDE / usuario
+.vs/
+*.vcxproj.user
+*.suo
+*.user
+.idea/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Opcional: modelos grandes (descomentar si no quieres versionar .gguf)
+# models/*.gguf

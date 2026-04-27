@@ -7,7 +7,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.upb.obsia.data.AuthPreferences
 import com.upb.obsia.data.ChatMessage
-import com.upb.obsia.domain.model.EngineResponse
 import com.upb.obsia.domain.repository.ChatRepository
 import com.upb.obsia.domain.repository.EngineRepository
 import java.io.File
@@ -66,6 +65,10 @@ class ChatViewModel(
 
     private val _inputText = MutableStateFlow("")
     val inputText: StateFlow<String> = _inputText.asStateFlow()
+
+    /** Texto del LLM acumulado durante streaming. null = no hay streaming activo. */
+    private val _streamingText = MutableStateFlow<String?>(null)
+    val streamingText: StateFlow<String?> = _streamingText.asStateFlow()
 
     val welcomeMessage = "¡Arro está aquí para ayudarte!"
 
@@ -245,9 +248,46 @@ class ChatViewModel(
             chatRepository.touchSession(sessionId)
             _queryState.value = ChatQueryState.Loading
 
-            // Orquestar consulta — Esto detecta emergencias y reglas clínicas antes del LLM
-            val response = queryOrchestrator.process(text.trim())
-            handleClinicalResponse(response)
+            val query = text.trim()
+            val contextQuery = buildConversationContext(query)
+
+            queryOrchestrator.processStreaming(query = query, conversationContext = contextQuery)
+                .collect { response ->
+                    when (response) {
+                        is com.upb.obsia.domain.model.ClinicalResponse.StreamToken -> {
+                            _streamingText.value = (_streamingText.value ?: "") + response.token
+                        }
+                        is com.upb.obsia.domain.model.ClinicalResponse.LlmGenerated -> {
+                            val content = buildString {
+                                append(response.responseText)
+                                if (!response.responseText.contains(com.upb.obsia.domain.model.ClinicalResponse.DISCLAIMER)) {
+                                    append("\n\nℹ️ ${com.upb.obsia.domain.model.ClinicalResponse.DISCLAIMER}")
+                                }
+                            }
+                            _streamingText.value = null
+                            saveAndShowAssistantMessage(content)
+                        }
+                        else -> {
+                            _streamingText.value = null
+                            handleClinicalResponse(response)
+                        }
+                    }
+                }
+        }
+    }
+
+    private fun buildConversationContext(currentQuery: String): String {
+        // Toma los últimos 6 mensajes ANTES de la consulta actual (3 intercambios)
+        val history = _messages.value.dropLast(1).takeLast(6)
+        if (history.isEmpty()) return currentQuery
+
+        return buildString {
+            append("Historial de la consulta:\n")
+            history.forEach { msg ->
+                val rol = if (msg.role == "user") "Doctor" else "Arro"
+                append("$rol: ${msg.content.take(300).replace("\n", " ")}\n")
+            }
+            append("\nConsulta actual del doctor: $currentQuery")
         }
     }
 
@@ -255,60 +295,42 @@ class ChatViewModel(
         when (response) {
             is com.upb.obsia.domain.model.ClinicalResponse.Emergency -> {
                 val content = buildString {
-                    append("**${response.title}**\n\n")
-                    append("${response.why}\n\n")
+                    append("**${response.title}**")
+                    if (response.dangerLevel.isNotBlank()) append(" — ${response.dangerLevel}")
+                    append("\n\n")
+                    if (response.whatsHappening.isNotBlank()) {
+                        append("${response.whatsHappening}\n\n")
+                    }
+                    append("**Por qué es urgente:** ${response.why}\n\n")
                     append("### Acciones inmediatas:\n")
-                    response.immediateSteps.forEach { append("* $it\n") }
-                    append("\n⚠️ ${response.disclaimer}")
+                    response.immediateSteps.forEachIndexed { i, step -> append("${i + 1}. $step\n") }
+                    append("\n**Escalar cuando:** ${response.escalatesWhen}\n\n")
+                    append("⚠️ ${response.disclaimer}")
                 }
                 saveAndShowAssistantMessage(content)
             }
             is com.upb.obsia.domain.model.ClinicalResponse.RuleMatch -> {
                 val content = buildString {
                     append("${response.response}\n\n")
-                    append("*¿Cuándo consultar?* ${response.whenToConsult}\n\n")
+                    append("*Criterios de escalada:* ${response.whenToConsult}\n\n")
                     append("ℹ️ ${response.disclaimer}")
                 }
                 saveAndShowAssistantMessage(content)
             }
             is com.upb.obsia.domain.model.ClinicalResponse.LlmGenerated -> {
-                // Si es LLM, preferimos streaming para mejor UX, pero usamos el texto del orquestador
-                // como fallback o si el streaming falla. Aquí reiniciamos el streaming.
-                startStreamingResponse(_messages.value.last().content)
+                val content = buildString {
+                    append(response.responseText)
+                    if (!response.responseText.contains(com.upb.obsia.domain.model.ClinicalResponse.DISCLAIMER)) {
+                        append("\n\nℹ️ ${com.upb.obsia.domain.model.ClinicalResponse.DISCLAIMER}")
+                    }
+                }
+                saveAndShowAssistantMessage(content)
             }
             is com.upb.obsia.domain.model.ClinicalResponse.Error -> {
                 _queryState.value = ChatQueryState.Error(response.message)
             }
-        }
-    }
-
-    private suspend fun startStreamingResponse(text: String) {
-        var currentAssistantMsg =
-                ChatMessage(sessionId = sessionId, role = "assistant", content = "")
-
-        engineRepository.queryStreaming(text.trim()).collect { response ->
-            when (response) {
-                is EngineResponse.Partial -> {
-                    _queryState.value = ChatQueryState.Idle
-                    currentAssistantMsg =
-                            currentAssistantMsg.copy(
-                                    content = currentAssistantMsg.content + response.token
-                            )
-                    updateLastAssistantMessage(currentAssistantMsg)
-                }
-                is EngineResponse.Success -> {
-                    val finalMsg =
-                            currentAssistantMsg.copy(
-                                    content = response.responseText,
-                                    processingMs = response.processingMs
-                            )
-                    val id = chatRepository.saveMessage(finalMsg)
-                    updateLastAssistantMessage(finalMsg.copy(id = id.toInt()))
-                    _queryState.value = ChatQueryState.Idle
-                }
-                is EngineResponse.Failure -> {
-                    _queryState.value = ChatQueryState.Error(response.errorMessage)
-                }
+            is com.upb.obsia.domain.model.ClinicalResponse.StreamToken -> {
+                // Ya procesado en el flujo de streaming, ignorar aquí
             }
         }
     }
@@ -319,15 +341,6 @@ class ChatViewModel(
         val id = chatRepository.saveMessage(assistantMessage)
         _messages.value = _messages.value + assistantMessage.copy(id = id.toInt())
         _queryState.value = ChatQueryState.Idle
-    }
-
-    private fun updateLastAssistantMessage(msg: ChatMessage) {
-        val lastMsg = _messages.value.lastOrNull()
-        if (lastMsg?.role == "assistant") {
-            _messages.value = _messages.value.dropLast(1) + msg
-        } else {
-            _messages.value = _messages.value + msg
-        }
     }
 
     override fun onCleared() {

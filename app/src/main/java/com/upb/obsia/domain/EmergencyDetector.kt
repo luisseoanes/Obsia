@@ -21,21 +21,26 @@ class EmergencyDetector(jsonContent: String) {
     private val jsonConfig = Json { ignoreUnknownKeys = true }
     private val config = jsonConfig.decodeFromString<EmergencyConfig>(jsonContent)
 
-    fun analizar(input: String): UrgencyLevel {
-        val textoLimpio = input.lowercase()
-            .replace(Regex("[áàä]"), "a")
-            .replace(Regex("[éèë]"), "e")
-            .replace(Regex("[íìï]"), "i")
-            .replace(Regex("[óòö]"), "o")
-            .replace(Regex("[úùü]"), "u")
-            .replace(Regex("[ñÑ]"), "n")
-            .replace(Regex("[^a-z0-9 ]"), "")
-            .trim()
+    private fun normalizar(texto: String): String = texto.lowercase()
+        .replace(Regex("[áàäâ]"), "a")
+        .replace(Regex("[éèëê]"), "e")
+        .replace(Regex("[íìïî]"), "i")
+        .replace(Regex("[óòöô]"), "o")
+        .replace(Regex("[úùüû]"), "u")
+        .replace(Regex("[ñÑ]"), "n")
+        .replace(Regex("[^a-z0-9 ]"), "")
+        .trim()
 
-        for (categoria in config.categories) {
-            for (keyword in categoria.keywords) {
+    // Keywords pre-normalizados al cargar para evitar mismatch con texto normalizado
+    private val keywordsPorCategoria: List<Pair<String, List<String>>> =
+        config.categories.map { cat -> cat.id to cat.keywords.map { normalizar(it) } }
+
+    fun analizar(input: String): UrgencyLevel {
+        val textoLimpio = normalizar(input)
+        for ((categoriaId, keywords) in keywordsPorCategoria) {
+            for (keyword in keywords) {
                 if (textoLimpio.contains(keyword)) {
-                    println("LOG: Match en [${categoria.id}] con [$keyword]")
+                    android.util.Log.d("ObsIA", "EmergencyMatch [$categoriaId] con [$keyword]")
                     return UrgencyLevel.EMERGENCY
                 }
             }

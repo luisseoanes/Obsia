@@ -36,21 +36,26 @@ class EmergencyClinicalRules(jsonContent: String) {
     private val jsonConfig = Json { ignoreUnknownKeys = true }
     private val config = jsonConfig.decodeFromString<EmergencyRulesConfig>(jsonContent)
 
-    fun lookup(query: String): EmergencyRuleMatch? {
-        val textoLimpio = query.lowercase()
-            .replace(Regex("[áàä]"), "a")
-            .replace(Regex("[éèë]"), "e")
-            .replace(Regex("[íìï]"), "i")
-            .replace(Regex("[óòö]"), "o")
-            .replace(Regex("[úùü]"), "u")
-            .replace(Regex("[ñÑ]"), "n")
-            .replace(Regex("[^a-z0-9 ]"), "")
-            .trim()
+    private fun normalizar(texto: String): String = texto.lowercase()
+        .replace(Regex("[áàäâ]"), "a")
+        .replace(Regex("[éèëê]"), "e")
+        .replace(Regex("[íìïî]"), "i")
+        .replace(Regex("[óòöô]"), "o")
+        .replace(Regex("[úùüû]"), "u")
+        .replace(Regex("[ñÑ]"), "n")
+        .replace(Regex("[^a-z0-9 ]"), "")
+        .trim()
 
-        for (rule in config.rules) {
-            for (keyword in rule.keywords) {
+    // Keywords pre-normalizados al cargar para garantizar match consistente
+    private val rulesConKeywordsNormalizados: List<Pair<EmergencyRule, List<String>>> =
+        config.rules.map { rule -> rule to rule.keywords.map { normalizar(it) } }
+
+    fun lookup(query: String): EmergencyRuleMatch? {
+        val textoLimpio = normalizar(query)
+        for ((rule, keywords) in rulesConKeywordsNormalizados) {
+            for (keyword in keywords) {
                 if (textoLimpio.contains(keyword)) {
-                    println("LOG: Regla de emergencia [${rule.id}] activada con [$keyword]")
+                    android.util.Log.d("ObsIA", "EmergencyRule [${rule.id}] con [$keyword]")
                     return EmergencyRuleMatch(
                         id = rule.id,
                         title = rule.title,

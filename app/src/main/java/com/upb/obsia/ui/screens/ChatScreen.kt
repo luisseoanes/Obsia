@@ -91,6 +91,7 @@ fun ChatScreen(
         val sessionName by viewModel.sessionName.collectAsState()
         val voiceState by viewModel.voiceState.collectAsState()
         val inputText by viewModel.inputText.collectAsState()
+        val streamingText by viewModel.streamingText.collectAsState()
 
         val listState = rememberLazyListState()
         val keyboardController = LocalSoftwareKeyboardController.current
@@ -103,9 +104,9 @@ fun ChatScreen(
 
         LaunchedEffect(Unit) { viewModel.initialize(sessionId) }
 
-        LaunchedEffect(messages.size, queryState) {
-                if (messages.isNotEmpty()) {
-                        listState.animateScrollToItem(index = messages.size + 1)
+        LaunchedEffect(messages.size, queryState, streamingText != null) {
+                if (messages.isNotEmpty() || streamingText != null) {
+                        listState.animateScrollToItem(index = messages.size + 5)
                 }
         }
 
@@ -196,11 +197,18 @@ fun ChatScreen(
                                                                         )
                                                         }
                                                 }
+                                                // Burbuja de streaming: visible mientras el LLM genera tokens
+                                                if (streamingText != null) {
+                                                        item(key = "streaming") {
+                                                                AssistantBubble(text = streamingText!!)
+                                                        }
+                                                }
                                                 item {
                                                         AnimatedVisibility(
+                                                                // Solo mostrar puntos cuando carga pero aún no hay tokens
                                                                 visible =
-                                                                        queryState is
-                                                                                ChatQueryState.Loading,
+                                                                        queryState is ChatQueryState.Loading &&
+                                                                                streamingText == null,
                                                                 enter = fadeIn() + scaleIn(),
                                                                 exit = fadeOut()
                                                         ) { TypingIndicator() }

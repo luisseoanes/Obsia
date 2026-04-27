@@ -1,0 +1,332 @@
+[
+  {
+    "text": "PREECLAMPSIA: Definición y criterios diagnósticos. La preeclampsia se define como hipertensión arterial (PA ≥140/90 mmHg en dos ocasiones separadas por al menos 4 horas) que aparece después de las 20 semanas de gestación, acompañada de proteinuria (≥300 mg en orina de 24 horas o relación proteína/creatinina ≥0.3). En ausencia de proteinuria, se diagnostica con hipertensión más signos de daño orgánico: trombocitopenia (<100,000/μL), insuficiencia renal (creatinina >1.1 mg/dL), alteración hepática (transaminasas >2 veces el límite superior), edema pulmonar o síntomas cerebrales/visuales.",
+    "metadata": {
+      "source": "guia_hipertension_embarazo.pdf",
+      "chunk_id": 1,
+      "word_count": 95,
+      "section_type": "Diagnóstico",
+      "clinical_topic": "Preeclampsia",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "PREECLAMPSIA SEVERA: Criterios de severidad. Se considera preeclampsia severa cuando presenta: PA sistólica ≥160 mmHg o diastólica ≥110 mmHg en dos ocasiones separadas 4 horas; trombocitopenia severa (<100,000/μL); deterioro de la función hepática (transaminasas >70 UI/L) con dolor en hipocondrio derecho; insuficiencia renal progresiva (creatinina >1.1 mg/dL); edema pulmonar; síntomas neurológicos (cefalea persistente, alteraciones visuales, hiperreflexia con clonus). Requiere hospitalización inmediata y evaluación para finalización del embarazo según edad gestacional.",
+    "metadata": {
+      "source": "guia_hipertension_embarazo.pdf",
+      "chunk_id": 2,
+      "word_count": 85,
+      "section_type": "Diagnóstico",
+      "clinical_topic": "Preeclampsia",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "TRATAMIENTO DE PREECLAMPSIA SEVERA: Sulfato de magnesio. Indicación: prevención y tratamiento de convulsiones en preeclampsia severa y eclampsia. DOSIS DE CARGA: 4-6 gramos IV en 15-20 minutos. DOSIS DE MANTENIMIENTO: 1-2 gramos/hora en infusión continua. Monitorización: reflejos tendinosos profundos (suspender si ausentes), frecuencia respiratoria (suspender si <12/min), diuresis (suspender si <25-30 mL/hora). Niveles terapéuticos: 4-7 mEq/L. ANTÍDOTO: Gluconato de calcio 1 gramo IV lento en caso de toxicidad (depresión respiratoria, arreflexia). Mantener hasta 24 horas posparto o 24 horas después de la última convulsión.",
+    "metadata": {
+      "source": "protocolo_sulfato_magnesio.pdf",
+      "chunk_id": 3,
+      "word_count": 110,
+      "section_type": "Tratamiento",
+      "clinical_topic": "Preeclampsia",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "ANTIHIPERTENSIVOS EN EMBARAZO: Fármacos de primera línea. LABETALOL: dosis inicial 100 mg VO cada 8-12h, máximo 2400 mg/día. IV: 20 mg bolo, luego 40-80 mg cada 10 min hasta máximo 300 mg. METILDOPA: 250-500 mg VO cada 8h, máximo 3 g/día. Fármaco más estudiado en embarazo. NIFEDIPINO: 10-20 mg VO cada 6-8h (liberación inmediata) o 30-60 mg cada 12-24h (liberación prolongada). HIDRALAZINA IV: 5 mg bolo, repetir 5-10 mg cada 20 min hasta máximo 20 mg. CONTRAINDICADOS: IECA, ARA-II (teratogénicos), atenolol (restricción crecimiento). Meta: PA <160/110 mmHg pero >140/90 mmHg para mantener perfusión placentaria.",
+    "metadata": {
+      "source": "farmacologia_embarazo.pdf",
+      "chunk_id": 4,
+      "word_count": 105,
+      "section_type": "Tratamiento",
+      "clinical_topic": "Hipertensión",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "HEMORRAGIA POSPARTO: Definición y clasificación. Pérdida sanguínea >500 mL después de parto vaginal o >1000 mL después de cesárea. HPP PRIMARIA: ocurre en primeras 24 horas. HPP SECUNDARIA: entre 24 horas y 12 semanas posparto. Causas (regla de las 4T): TONO (70%): atonía uterina. TRAUMA (20%): laceraciones, hematomas, inversión, ruptura uterina. TEJIDO (10%): retención placentaria, restos, placenta acreta. TROMBINA (<1%): coagulopatías. Factores de riesgo: sobredistensión uterina, parto prolongado, corioamnionitis, multiparidad, cesárea previa, placenta previa/acreta, preeclampsia, anticoagulación.",
+    "metadata": {
+      "source": "protocolo_hemorragia_posparto.pdf",
+      "chunk_id": 5,
+      "word_count": 95,
+      "section_type": "Diagnóstico",
+      "clinical_topic": "Hemorragia",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "MANEJO DE ATONÍA UTERINA: Protocolo escalonado. PASO 1: Masaje uterino bimanual vigoroso + vaciamiento vesical. PASO 2: OXITOCINA - 10-40 UI en 1000 mL cristaloide a 125-200 mL/h. No dar bolo IV rápido (hipotensión). PASO 3: MISOPROSTOL - 800-1000 μg rectal (dosis única). PASO 4: METILERGONOVINA - 0.2 mg IM cada 2-4h (máximo 5 dosis). CONTRAINDICADA en hipertensión. PASO 5: CARBOPROST (15-metil-PGF2α) - 250 μg IM cada 15-90 min (máximo 8 dosis). CONTRAINDICADO en asma. PASO 6: Taponamiento uterino con balón (Bakri), suturas compresivas (B-Lynch), ligadura arterias uterinas, embolización arterial. PASO 7: Histerectomía si falla todo lo anterior.",
+    "metadata": {
+      "source": "protocolo_hemorragia_posparto.pdf",
+      "chunk_id": 6,
+      "word_count": 115,
+      "section_type": "Tratamiento",
+      "clinical_topic": "Hemorragia",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "DIABETES GESTACIONAL: Criterios diagnósticos (IADPSG/OMS). Realizar curva de tolerancia oral a la glucosa (CTOG) con 75g a TODAS las embarazadas entre semanas 24-28. DIAGNÓSTICO si uno o más valores alterados: BASAL ≥92 mg/dL (5.1 mmol/L), 1 HORA ≥180 mg/dL (10.0 mmol/L), 2 HORAS ≥153 mg/dL (8.5 mmol/L). En primer trimestre, realizar glucemia basal en mujeres con factores de riesgo (obesidad, antecedente DG, SOP, familiar primer grado diabético). Si basal ≥126 mg/dL o HbA1c ≥6.5% en primer trimestre: diabetes pregestacional, no gestacional. Repetir CTOG en semana 32-34 si primera fue normal pero persisten factores de riesgo.",
+    "metadata": {
+      "source": "guia_diabetes_gestacional.pdf",
+      "chunk_id": 7,
+      "word_count": 115,
+      "section_type": "Diagnóstico",
+      "clinical_topic": "Diabetes",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "CONTROL GLUCÉMICO EN DIABETES GESTACIONAL: Objetivos y monitorización. METAS GLUCÉMICAS: Basal <95 mg/dL, 1 hora postprandial <140 mg/dL, 2 horas postprandial <120 mg/dL. Automonitorización 4-7 veces/día (basal y postprandiales). TRATAMIENTO: Primera línea - modificación dietética (restricción carbohidratos 40-45% calorías totales, distribuidos en 3 comidas + 2-3 colaciones) + ejercicio moderado 30 min/día. Si >50% valores fuera de meta en 1-2 semanas: INSULINA NPH (inicio 0.2-0.3 UI/kg/día, dividida 2/3 desayuno + 1/3 cena) o METFORMINA 500-2500 mg/día (categoría B, segura pero cruza placenta). HbA1c cada 4-6 semanas, meta <6% sin hipoglucemias.",
+    "metadata": {
+      "source": "guia_diabetes_gestacional.pdf",
+      "chunk_id": 8,
+      "word_count": 120,
+      "section_type": "Tratamiento",
+      "clinical_topic": "Diabetes",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "AMENAZA DE PARTO PRETÉRMINO: Diagnóstico y evaluación. Definición: contracciones uterinas regulares (≥4 en 20 min o ≥8 en 60 min) + cambios cervicales (dilatación ≥2 cm, borramiento ≥80%) entre 20-37 semanas. EVALUACIÓN: Especuloscopía (descartar RPM, dilatación cervical, visualizar membranas), tacto vaginal (test de Bishop), ecografía transvaginal (longitud cervical <25 mm predictivo de parto <7 días), fibronectina fetal (si >50 ng/mL + cérvix corto: alto riesgo). FACTORES DE RIESGO: parto pretérmino previo (mayor predictor, 30-50% recurrencia), gestación múltiple, polihidramnios, infecciones (ITU, corioamnionitis), incompetencia cervical, malformaciones uterinas, tabaquismo, bajo nivel socioeconómico.",
+    "metadata": {
+      "source": "protocolo_parto_pretermino.pdf",
+      "chunk_id": 9,
+      "word_count": 110,
+      "section_type": "Diagnóstico",
+      "clinical_topic": "Parto",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "TOCÓLISIS: Indicaciones y fármacos. INDICACIÓN: APP confirmada entre 24-34 semanas para ganar 48h y administrar corticoides. CONTRAINDICACIONES: corioamnionitis, DPPNI severo, compromiso fetal, malformación fetal letal, preeclampsia severa, RCIU severo. NIFEDIPINO (primera línea): carga 20 mg VO, luego 10-20 mg c/4-6h por 48h. Menos efectos adversos. INDOMETACINA: 50-100 mg rectal/VO carga, luego 25-50 mg c/6h máximo 48h. SOLO <32 semanas (riesgo cierre ducto, oligohidramnios). ATOSIBAN: 6.75 mg IV bolo, luego 300 μg/min x3h, luego 100 μg/min hasta 48h. Costoso. SULFATO DE MAGNESIO: 4-6 g IV carga, 1-2 g/h mantenimiento (además tiene neuroprotección fetal <32 sem).",
+    "metadata": {
+      "source": "protocolo_parto_pretermino.pdf",
+      "chunk_id": 10,
+      "word_count": 125,
+      "section_type": "Tratamiento",
+      "clinical_topic": "Parto",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "MADURACIÓN PULMONAR FETAL: Corticoides prenatales. INDICACIÓN: Todas las embarazadas con riesgo de parto entre 24-34 semanas. Beneficio máximo si parto ocurre entre 24h-7 días post-administración. BETAMETASONA (preferida): 12 mg IM cada 24h x 2 dosis. DEXAMETASONA (alternativa): 6 mg IM cada 12h x 4 dosis. RESCATE: considerar dosis única adicional si >14 días desde curso inicial y nueva amenaza <34 sem. Reduce: SDR neonatal 50%, HIV intraventricular 50%, enterocolitis necrotizante 50%, mortalidad neonatal 30%. TAMBIÉN INDICADO: cesárea electiva <39 sem, RPM pretérmino sin trabajo de parto. NO administrar >4 cursos (riesgo restricción crecimiento, supresión adrenal).",
+    "metadata": {
+      "source": "protocolo_parto_pretermino.pdf",
+      "chunk_id": 11,
+      "word_count": 115,
+      "section_type": "Tratamiento",
+      "clinical_topic": "Parto",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "RUPTURA PREMATURA DE MEMBRANAS: Manejo según edad gestacional. DIAGNÓSTICO: Visualización directa de líquido amniótico en especuloscopía, prueba de nitrazina pH >6.5 (azul), cristalización en helecho (microscopía). NO tacto vaginal si no está en trabajo de parto (aumenta infección). RPM PRETÉRMINO <34 SEMANAS: Manejo expectante hospitalizado, antibióticos profilácticos (ampicilina 2g IV c/6h + eritromicina 250mg c/6h x 48h, luego amoxicilina 500mg c/8h + eritromicina 333mg c/8h x 5 días), corticoides si <34sem, monitorización fetal diaria, perfil biofísico 2 veces/semana. Finalizar si corioamnionitis o compromiso fetal. RPM ≥34 SEMANAS: Inducción del parto dentro de 24h (riesgo infección supera beneficio prolongar embarazo).",
+    "metadata": {
+      "source": "protocolo_rpm.pdf",
+      "chunk_id": 12,
+      "word_count": 120,
+      "section_type": "Manejo",
+      "clinical_topic": "Parto",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "RESTRICCIÓN DEL CRECIMIENTO INTRAUTERINO (RCIU): Definición y clasificación. Definición: Peso fetal estimado (PFE) o circunferencia abdominal <percentil 10 para edad gestacional. RCIU SEVERO: PFE <p3. Clasificación: SIMÉTRICO (20%): afectación proporcional de todos los parámetros (cabeza, abdomen, fémur). Causas: cromosomopatías, infecciones TORCH, malformaciones. Inicio precoz <20 sem. ASIMÉTRICO (80%): desproporción cráneo-abdominal (perímetro cefálico normal, abdomen pequeño). Causa: insuficiencia placentaria. Inicio tardío >28 sem. DIAGNÓSTICO: Biometría fetal cada 2-3 semanas, Doppler arteria umbilical (si IR elevado: redistribución flujo, si flujo diastólico ausente/reverso: riesgo muerte fetal), Doppler cerebral medio (vasodilatación cerebral compensatoria).",
+    "metadata": {
+      "source": "guia_rciu.pdf",
+      "chunk_id": 13,
+      "word_count": 120,
+      "section_type": "Diagnóstico",
+      "clinical_topic": "RCIU",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "DESPRENDIMIENTO PREMATURO DE PLACENTA NORMOINSERTA (DPPNI): Presentación y manejo. Presentación clínica: Tríada clásica (solo 50% casos): sangrado vaginal oscuro, dolor abdominal intenso continuo, hipertonía uterina. Puede haber: shock desproporcionado a sangrado visible (hemorragia oculta retroplacentaria), compromiso fetal, CID. DIAGNÓSTICO: CLÍNICO (ecografía solo detecta 25-50% casos). CLASIFICACIÓN Sher: Grado 0 - asintomático, Grado 1 - sangrado leve sin compromiso materno-fetal, Grado 2 - sintomático sin muerte fetal, Grado 3 - muerte fetal. MANEJO: Estabilización hemodinámica (2 accesos IV gruesos, cristaloides, tipificación y reserva sangre, pruebas coagulación). Monitorización fetal continua. Si compromiso materno-fetal o >34sem: CESÁREA URGENTE. Si <34sem estable: considerar manejo expectante con corticoides.",
+    "metadata": {
+      "source": "emergencias_obstetricas.pdf",
+      "chunk_id": 14,
+      "word_count": 130,
+      "section_type": "Diagnóstico",
+      "clinical_topic": "Hemorragia",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "PLACENTA PREVIA: Clasificación y manejo. Definición: Inserción placentaria en segmento uterino inferior. CLASIFICACIÓN: COMPLETA (cubre completamente orificio cervical interno), PARCIAL (cubre parcialmente), MARGINAL (borde placentario a <2cm del OCI), DE INSERCIÓN BAJA (borde a 2-3.5cm del OCI). DIAGNÓSTICO: Ecografía transvaginal (superior a abdominal). NO realizar tacto vaginal si se sospecha (riesgo hemorragia masiva). CLÍNICA: Sangrado rojo rutilante, INDOLORO, recurrente, en tercer trimestre. MANEJO: Si <36sem sin sangrado activo: reposo, abstinencia sexual, hierro oral, considerar corticoides si <34sem. Si sangrado importante: hospitalización, estabilización, transfusión si necesario. FINALIZACIÓN: Cesárea programada 36-37 semanas si asintomática. Antes si sangrado no controlable o compromiso fetal.",
+    "metadata": {
+      "source": "protocolo_placenta_previa.pdf",
+      "chunk_id": 15,
+      "word_count": 125,
+      "section_type": "Manejo",
+      "clinical_topic": "Hemorragia",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "SUPLEMENTACIÓN EN EMBARAZO: Ácido fólico, hierro y yodo. ÁCIDO FÓLICO: 0.4-0.8 mg/día desde 1-3 meses ANTES de concepción hasta semana 12 (reduce defectos tubo neural 70%). ALTO RIESGO (5 mg/día): antecedente DTN, antiepilépticos, diabetes, obesidad. HIERRO: 30-60 mg/día hierro elemental desde semana 12-16 o al diagnóstico de anemia (Hb <11 g/dL primer trimestre, <10.5 segundo, <11 tercero). Con vitamina C para mejor absorción. Si anemia severa <9 g/dL: hierro IV (carboximaltosa férrica 500-1000mg) o transfusión si <7 g/dL. YODO: 200 μg/día (150 μg de necesidad aumentada + 50 μg basal). Usar sal yodada. CALCIO: 1200-1500 mg/día si ingesta dietética insuficiente. VITAMINA D: 400-600 UI/día, 1000-2000 UI si deficiencia (<20 ng/mL).",
+    "metadata": {
+      "source": "gpc_533_embarazo_aetsa_compl_caduc.pdf",
+      "chunk_id": 16,
+      "word_count": 145,
+      "section_type": "Tratamiento",
+      "clinical_topic": "Embarazo",
+      "priority": "high"
+    }
+  },
+  {
+    "text": "INFECCIÓN URINARIA EN EMBARAZO: Bacteriuria asintomática y cistitis. BACTERIURIA ASINTOMÁTICA: ≥100,000 UFC/mL en urocultivo sin síntomas. Prevalencia 2-10%. CRIBADO: urocultivo en primera visita prenatal (semana 8-12). TRATAMIENTO (7 días): Nitrofurantoína 100mg c/12h (evitar último mes, riesgo anemia hemolítica neonatal), Amoxicilina-clavulánico 500/125mg c/8h, Cefalexina 500mg c/6h, Fosfomicina 3g dosis única (menos efectiva). Urocultivo control 1-2 semanas post-tratamiento. CISTITIS: disuria, polaquiuria, urgencia, sin fiebre ni dolor lumbar. TRATAMIENTO igual que bacteriuria asintomática. PROFILAXIS: si ≥2 episodios, considerar nitrofurantoína 50-100mg noche o cefalexina 250mg noche hasta parto. NO USAR: fluoroquinolonas (artropatía fetal), tetraciclinas (displasia ósea), TMP-SMX primer trimestre (DTN).",
+    "metadata": {
+      "source": "protocolo_itu_embarazo.pdf",
+      "chunk_id": 17,
+      "word_count": 135,
+      "section_type": "Tratamiento",
+      "clinical_topic": "Infección",
+      "priority": "high"
+    }
+  },
+  {
+    "text": "PIELONEFRITIS EN EMBARAZO: Manejo y complicaciones. Complicación más frecuente de ITU no tratada. Clínica: fiebre >38°C, escalofríos, dolor lumbar (costado derecho más frecuente), náuseas/vómitos, puño-percusión positiva. Puede cursar con bacteriemia (20%), sepsis, SDRA, APP, RCIU. DIAGNÓSTICO: urocultivo + hemocultivos, BUN/creatinina, hemograma completo, PCR. Ecografía renal si sospecha obstrucción/absceso. MANEJO: HOSPITALIZACIÓN obligatoria. Hidratación IV vigorosa, antitérmicos, antibióticos IV: Ceftriaxona 1-2g c/24h o Cefazolina 1g c/8h hasta afebril 48h, luego vía oral 10-14 días totales. Amoxicilina-clavulánico 1-2g c/6-8h IV alternativa. Si sospecha Pseudomonas (sondaje, ITU recurrente): Piperacilina-tazobactam 4.5g c/6h. Monitorización fetal, vigilar APP. Urocultivo control post-tratamiento, luego mensual. Profilaxis antibiótica hasta parto.",
+    "metadata": {
+      "source": "protocolo_itu_embarazo.pdf",
+      "chunk_id": 18,
+      "word_count": 140,
+      "section_type": "Tratamiento",
+      "clinical_topic": "Infección",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "CORIOAMNIONITIS: Diagnóstico y tratamiento. Infección intraamniótica. Criterios diagnósticos: Fiebre materna >38°C + 2 de: leucocitosis materna >15,000, taquicardia materna >100 lpm, taquicardia fetal >160 lpm, sensibilidad uterina, líquido amniótico purulento/fétido. FACTORES DE RIESGO: RPM prolongada (>18h), trabajo de parto prolongado, tactos vaginales múltiples, monitorización interna, cerclaje, vaginosis bacteriana, colonización estreptococo grupo B. COMPLICACIONES: sepsis materna, hemorragia posparto, cesárea urgente; sepsis neonatal, neumonía, parálisis cerebral. TRATAMIENTO: Antibióticos IV INMEDIATOS + finalización del embarazo. RÉGIMEN: Ampicilina 2g c/6h + Gentamicina 5 mg/kg c/24h. Si cesárea: agregar Clindamicina 900mg c/8h (cobertura anaerobios). Continuar hasta afebril 24-48h posparto. Hemocultivos antes de iniciar antibióticos.",
+    "metadata": {
+      "source": "emergencias_obstetricas.pdf",
+      "chunk_id": 19,
+      "word_count": 140,
+      "section_type": "Diagnóstico",
+      "clinical_topic": "Infección",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "INDUCCIÓN DEL TRABAJO DE PARTO: Indicaciones y métodos. INDICACIONES: embarazo prolongado ≥41sem, RPM a término, hipertensión/preeclampsia, diabetes mal controlada, RCIU, oligohidramnios, muerte fetal, corioamnionitis. CONTRAINDICACIONES: placenta previa, vasa previa, cesárea clásica previa, presentación transversa, herpes genital activo, cáncer cervical invasivo. VALORACIÓN CERVICAL (Bishop): Dilatación, borramiento, consistencia, posición, altura presentación. Score ≥6: favorable (alta tasa éxito). <6: desfavorable (maduración cervical). MADURACIÓN CERVICAL: MISOPROSTOL 25 μg vaginal c/4-6h o DINOPROSTONA gel/insert vaginal. INDUCCIÓN: OXITOCINA IV (dilución: 10 UI en 1000 mL, iniciar 1-2 mU/min, incrementar 1-2 mU cada 30 min hasta dinámica adecuada 3-4 contracciones/10 min). Monitorización fetal continua obligatoria.",
+    "metadata": {
+      "source": "protocolo_induccion_parto.pdf",
+      "chunk_id": 20,
+      "word_count": 135,
+      "section_type": "Tratamiento",
+      "clinical_topic": "Parto",
+      "priority": "high"
+    }
+  },
+  {
+    "text": "REANIMACIÓN NEONATAL: Pasos iniciales y ventilación. PREPARACIÓN: sala 24-26°C, cuna radiante precalentada, equipo completo verificado. EVALUACIÓN RÁPIDA al nacer: ¿gestación a término? ¿llora/respira? ¿tono muscular bueno? Si respuesta NO a alguna: reanimación. PASOS INICIALES (30 seg): secar y estimular, posición cabeza neutra/ligera extensión, aspirar si secreciones abundantes (boca primero, luego nariz). EVALUAR: respiración, FC. Si APNEA o FC <100 lpm: VENTILACIÓN PRESIÓN POSITIVA (VPP) con bolsa-mascarilla, O2 al 21% (ajustar según oximetría pre-ductal). Frecuencia 40-60 ventilaciones/min. Si FC <60 lpm tras 30 seg VPP efectiva: COMPRESIONES TORÁCICAS (relación 3:1, profundidad 1/3 diámetro AP, sincronizadas con ventilación). Si persiste FC <60: ADRENALINA 0.01-0.03 mg/kg IV/IO (0.1-0.3 mL/kg de dilución 1:10,000). Vía endotraqueal 0.05-0.1 mg/kg menos efectiva.",
+    "metadata": {
+      "source": "protocolo_reanimacion_neonatal.pdf",
+      "chunk_id": 21,
+      "word_count": 155,
+      "section_type": "Tratamiento",
+      "clinical_topic": "Neonatología",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "SÍNDROME HELLP: Diagnóstico y manejo. Variante severa de preeclampsia. Acrónimo: Hemolysis (hemólisis), Elevated Liver enzymes (enzimas hepáticas elevadas), Low Platelets (plaquetas bajas). CRITERIOS DIAGNÓSTICOS (Tennessee): Hemólisis (LDH >600 UI/L, bilirrubina indirecta >1.2 mg/dL, haptoglobina baja, esquistocitos en frotis), AST >70 UI/L, plaquetas <100,000/μL. CLASIFICACIÓN Mississippi: Clase 1 (severo, plaquetas <50k), Clase 2 (plaquetas 50-100k), Clase 3 (leve, plaquetas 100-150k). CLÍNICA: dolor epigastrio/hipocondrio derecho (90%), náuseas/vómitos (50%), cefalea, alteraciones visuales. 15% sin hipertensión, 15% sin proteinuria. COMPLICACIONES: DPPNI, CID, falla renal, ruptura hepática, edema pulmonar. TRATAMIENTO: Estabilización, sulfato de magnesio, control hipertensión, FINALIZACIÓN EMBARAZO (única cura). Soporte: transfusión plaquetas si <20k o sangrado activo, plasma fresco si coagulopatía.",
+    "metadata": {
+      "source": "protocolo_hellp.pdf",
+      "chunk_id": 22,
+      "word_count": 155,
+      "section_type": "Diagnóstico",
+      "clinical_topic": "Preeclampsia",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "EMBARAZO ECTÓPICO: Diagnóstico y tratamiento. Implantación fuera cavidad uterina (95% tubárico). CLÍNICA CLÁSICA: amenorrea, dolor abdominal lateral, sangrado vaginal. Rotura: dolor súbito severo, hipotensión, shock. DIAGNÓSTICO: β-hCG cuantitativa + ecografía transvaginal. Si β-hCG >1500-2000 mIU/mL sin saco intrauterino: sospecha ectópico. Signos ecográficos: masa anexial compleja, líquido libre (sangre), anillo tubárico, saco extrauterino con embrión/latido. MANEJO MÉDICO (candidatas: hemodinámicamente estables, β-hCG <5000, masa <3.5cm, sin actividad cardíaca fetal, sin contraindicaciones metotrexato): METOTREXATO 50 mg/m² IM dosis única. Control β-hCG días 4 y 7 (debe descender >15% día 4-7). Si no desciende: 2da dosis. Evitar relaciones sexuales, ejercicio intenso, ácido fólico. MANEJO QUIRÚRGICO: salpingostomía (conservador) o salpingectomía (laparoscopia preferida vs laparotomía si inestable).",
+    "metadata": {
+      "source": "protocolo_embarazo_ectopico.pdf",
+      "chunk_id": 23,
+      "word_count": 150,
+      "section_type": "Diagnóstico",
+      "clinical_topic": "Embarazo",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "ABORTO ESPONTÁNEO: Clasificación y manejo. AMENAZA: sangrado vaginal con cérvix cerrado, embrión vivo. Reposo relativo, abstinencia sexual, control ecográfico. INEVITABLE: sangrado con dilatación cervical, membranas íntegras. INCOMPLETO: expulsión parcial, cérvix abierto, restos intrauterinos. COMPLETO: expulsión total, cérvix cerrado, útero vacío. DIFERIDO/RETENIDO: muerte embrionaria sin expulsión. OPCIONES MANEJO aborto incompleto/diferido: EXPECTANTE (hasta 2 semanas, tasa éxito 80% primer trimestre), MÉDICO (Misoprostol 800 μg vaginal, repetir c/24h hasta 3 dosis, tasa éxito 85%), QUIRÚRGICO (aspiración manual endouterina AMEU o legrado, tasa éxito 98%). ABORTO RECURRENTE: ≥3 pérdidas consecutivas <20 sem. Estudiar: cariotipo ambos padres, síndrome antifosfolípido, trombofilias, alteraciones uterinas (histerosalpingografía, histeroscopia), perfil tiroideo. Tratamiento según etiología: AAS+heparina si antifosfolípido, cerclaje si incompetencia cervical.",
+    "metadata": {
+      "source": "protocolo_aborto_espontaneo.pdf",
+      "chunk_id": 24,
+      "word_count": 155,
+      "section_type": "Manejo",
+      "clinical_topic": "Embarazo",
+      "priority": "high"
+    }
+  },
+  {
+    "text": "MONITORIZACIÓN FETAL INTRAPARTO: Interpretación cardiotocografía. EVALUACIÓN: Línea base (110-160 lpm normal), variabilidad (6-25 lpm normal, <5 anormal), aceleraciones (≥15 lpm por ≥15 seg, signo bienestar), desaceleraciones. CATEGORÍA I (NORMAL): basal 110-160, variabilidad moderada, aceleraciones presentes/ausentes, sin desaceleraciones tardías/variables. Continuar vigilancia. CATEGORÍA II (INDETERMINADO): basal 100-110 sin variabilidad, taquicardia >160, variabilidad mínima, ausencia aceleraciones, desaceleraciones variables recurrentes. Medidas conservadoras: cambio posición, hidratación, O2, reducir oxitocina. Reevaluar frecuentemente. CATEGORÍA III (ANORMAL): variabilidad ausente con desaceleraciones tardías recurrentes o bradicardia, o patrón sinusoidal. ACCIÓN INMEDIATA: medidas intrauterinas reanimación fetal, preparar parto urgente. Si persiste: CESÁREA INMEDIATA. pH de calota fetal: <7.20 acidosis, considerar finalización.",
+    "metadata": {
+      "source": "protocolo_monitorizacion_fetal.pdf",
+      "chunk_id": 25,
+      "word_count": 155,
+      "section_type": "Diagnóstico",
+      "clinical_topic": "Parto",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "DISTOCIA DE HOMBROS: Manejo y maniobras. Impactación hombro anterior tras expulsión cabeza. FACTORES RIESGO: macrosomía, diabetes materna, obesidad, parto instrumentado, expulsivo prolongado, antecedente distocia hombros. RECONOCIMIENTO: signo de la tortuga (cabeza retrocede contra periné), falta rotación externa normal. MANEJO INICIAL (recordar: NO TRACCIÓN EXCESIVA, riesgo parálisis braquial): LLAMAR AYUDA, cronometrar. MANIOBRA McROBERTS (1ra línea): hiperflexión muslos materno sobre abdomen (rota pelvis, aumenta diámetro AP). PRESIÓN SUPRAPÚBICA (NO fúndica): ayudante presiona sobre hombro anterior con puño cerrado hacia abajo y lateral. Si falla: MANIOBRAS ROTACIONALES - WOODS (rotar hombro posterior 180° hacia anterior) o RUBIN (presionar hombro posterior hacia pecho fetal). Si falla: EXTRACCIÓN HOMBRO POSTERIOR (mano posterior, flexionar brazo, extraerlo). ÚLTIMO RECURSO: Zavanelli (reintroducir cabeza, cesárea), sinfisiotomía.",
+    "metadata": {
+      "source": "emergencias_obstetricas.pdf",
+      "chunk_id": 26,
+      "word_count": 155,
+      "section_type": "Tratamiento",
+      "clinical_topic": "Parto",
+      "priority": "critical"
+    }
+  },
+  {
+    "text": "TROMBOPROFILAXIS EN EMBARAZO: Indicaciones y dosificación. ALTO RIESGO (anticoagulación terapéutica): tromboembolismo previo, trombofilia congénita sintomática, prótesis valvular mecánica. HEPARINA BAJO PESO MOLECULAR (preferida sobre warfarina - teratogénica): ENOXAPARINA 1 mg/kg SC c/12h ajustada a peso. RIESGO MODERADO (profilaxis dosis intermedia): trombofilia asintomática, TEV previo con factor reversible resuelto. Enoxaparina 40 mg c/12h. RIESGO BAJO (profilaxis postparto únicamente): edad >35, obesidad IMC>30, cesárea, reposo prolongado, preeclampsia, deshidratación, infección. Enoxaparina 40 mg c/24h x6 semanas posparto. SUSPENDER HBPM 24h antes de anestesia neuroaxial planificada. REVERTIR: protamina sulfato 1 mg por cada 100 UI heparina no fraccionada o 1 mg por cada mg enoxaparina (máximo 50 mg). Pasar a heparina no fraccionada semana 36-37 (vida media corta, mejor control parto).",
+    "metadata": {
+      "source": "protocolo_tromboprofilaxis_embarazo.pdf",
+      "chunk_id": 27,
+      "word_count": 160,
+      "section_type": "Tratamiento",
+      "clinical_topic": "Complicaciones",
+      "priority": "high"
+    }
+  },
+  {
+    "text": "VACUNACIÓN EN EMBARAZO: Indicaciones y contraindicaciones. RECOMENDADAS/SEGURAS (inactivadas): Tdap (tétanos-difteria-pertusis acelular) cada embarazo semana 27-36 (idealmente 27-32, máxima transferencia anticuerpos), protege RN contra tosferina hasta vacunas 2 meses. Influenza estacional (cualquier trimestre, inyectable inactivada). COVID-19 (cualquier trimestre, esquema completo + refuerzos). Hepatitis A y B si riesgo exposición. Meningococo, neumococo si indicación médica. CONTRAINDICADAS (vivas atenuadas): MMR (sarampión-paperas-rubéola) - revacunar posparto si no inmune. Varicela - revacunar posparto si seronegativa. BCG. Fiebre amarilla (solo si viaje inevitable a zona endémica, riesgo vs beneficio). Evitar embarazo 1 mes post-vacunas vivas. IMPORTANCIA: vacunación materna protege madre Y lactante pequeño (transferencia transplacentaria IgG, lactancia materna IgA secretora).",
+    "metadata": {
+      "source": "guia_vacunacion_embarazo.pdf",
+      "chunk_id": 28,
+      "word_count": 145,
+      "section_type": "Tratamiento",
+      "clinical_topic": "Embarazo",
+      "priority": "high"
+    }
+  },
+  {
+    "text": "ÉMESIS GRAVÍDICA E HIPERÉMESIS: Diagnóstico y tratamiento. ÉMESIS GRAVÍDICA: náuseas/vómitos primer trimestre, no deshidratación, no pérdida peso. Afecta 50-90% embarazadas. Manejo: comidas pequeñas frecuentes, evitar olores fuertes, jengibre, piridoxina (vitamina B6) 25 mg c/8h. HIPERÉMESIS GRAVÍDICA: vómitos persistentes con deshidratación, pérdida >5% peso, cetonuria, desequilibrio electrolítico. Requiere hospitalización. TRATAMIENTO: Hidratación IV (SF o RL, corregir electrolitos, tiamina 100 mg antes dextrosa si malnutrición), antieméticos escalonados - ONDANSETRÓN 4-8 mg c/8h IV/VO (primera línea), METOCLOPRAMIDA 10 mg c/6-8h, PROMETAZINA 12.5-25 mg c/4-6h, CLORPROMAZINA 10-25 mg c/4-6h. Si refractaria: METILPREDNISOLONA 16 mg c/8h x3 días, luego descender. Nutrición enteral/parenteral casos severos. Descartar: mola, hipertiroidismo gestacional, hepatitis, gastroparesia.",
+    "metadata": {
+      "source": "protocolo_hiperemesis.pdf",
+      "chunk_id": 29,
+      "word_count": 145,
+      "section_type": "Tratamiento",
+      "clinical_topic": "Embarazo",
+      "priority": "medium"
+    }
+  },
+  {
+    "text": "ANALGESIA Y ANESTESIA OBSTÉTRICA: Opciones y contraindicaciones. ANALGESIA SISTÉMICA: MEPERIDINA 25-50 mg IV/IM c/2-4h (puede causar depresión respiratoria neonatal si <2h antes parto, antídoto naloxona 0.1 mg/kg). FENTANILO 50-100 μg IV c/1h (inicio rápido, corta duración). ANALGESIA NEUROAXIAL (gold standard): EPIDURAL - catéter espacio epidural, anestésico local (bupivacaína, ropivacaína) ± opioide (fentanilo), analgesia sin bloqueo motor completo, permite deambulación. COMBINADA (raquídeo-epidural) - bolo raquídeo inicio rápido + catéter epidural mantenimiento. CONTRAINDICACIONES: coagulopatía (plaquetas <70-80k), hipovolemia severa no corregida, infección sitio punción, rechazo paciente. COMPLICACIONES: hipotensión (tratar cristaloides IV, efedrina, fenilefrina), cefalea postpunción (1%), bloqueo alto/total (raro, ventilación asistida). ANESTESIA GENERAL CESÁREA: solo si contraindicación neuroaxial o urgencia extrema (succinilcolina relajante, intubación rápida).",
+    "metadata": {
+      "source": "protocolo_analgesia_obstetrica.pdf",
+      "chunk_id": 30,
+      "word_count": 155,
+      "section_type": "Tratamiento",
+      "clinical_topic": "Parto",
+      "priority": "high"
+    }
+  }
+]

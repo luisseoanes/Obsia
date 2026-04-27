@@ -100,7 +100,15 @@ class EngineRepositoryImpl(private val context: Context) : EngineRepository {
     private suspend fun copyAssetIfNeeded(assetName: String): File =
             withContext(Dispatchers.IO) {
                 val dest = File(context.filesDir, assetName)
-                if (!dest.exists()) {
+                val shouldCopy = if (!dest.exists()) {
+                    true
+                } else {
+                    // Reemplazar si el asset del APK es más grande o más nuevo que el cacheado.
+                    // Esto garantiza que actualizaciones de JSON lleguen a usuarios existentes.
+                    val assetSize = context.assets.openFd(assetName).use { it.length }
+                    dest.length() != assetSize
+                }
+                if (shouldCopy) {
                     context.assets.open(assetName).use { input ->
                         FileOutputStream(dest).use { output -> input.copyTo(output) }
                     }

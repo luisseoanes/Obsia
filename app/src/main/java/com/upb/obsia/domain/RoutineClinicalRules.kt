@@ -30,21 +30,25 @@ class RoutineClinicalRules(jsonContent: String) {
     private val jsonConfig = Json { ignoreUnknownKeys = true }
     private val config = jsonConfig.decodeFromString<RoutineRulesConfig>(jsonContent)
 
-    fun lookup(query: String): RoutineRuleMatch? {
-        val textoLimpio = query.lowercase()
-            .replace(Regex("[áàä]"), "a")
-            .replace(Regex("[éèë]"), "e")
-            .replace(Regex("[íìï]"), "i")
-            .replace(Regex("[óòö]"), "o")
-            .replace(Regex("[úùü]"), "u")
-            .replace(Regex("[ñÑ]"), "n")
-            .replace(Regex("[^a-z0-9 ]"), "")
-            .trim()
+    private fun normalizar(texto: String): String = texto.lowercase()
+        .replace(Regex("[áàäâ]"), "a")
+        .replace(Regex("[éèëê]"), "e")
+        .replace(Regex("[íìïî]"), "i")
+        .replace(Regex("[óòöô]"), "o")
+        .replace(Regex("[úùüû]"), "u")
+        .replace(Regex("[ñÑ]"), "n")
+        .replace(Regex("[^a-z0-9 ]"), "")
+        .trim()
 
-        for (rule in config.rules) {
-            for (keyword in rule.keywords) {
+    private val rulesConKeywordsNormalizados: List<Pair<RoutineRule, List<String>>> =
+        config.rules.map { rule -> rule to rule.keywords.map { normalizar(it) } }
+
+    fun lookup(query: String): RoutineRuleMatch? {
+        val textoLimpio = normalizar(query)
+        for ((rule, keywords) in rulesConKeywordsNormalizados) {
+            for (keyword in keywords) {
                 if (textoLimpio.contains(keyword)) {
-                    println("LOG: Regla de rutina [${rule.id}] activada con [$keyword]")
+                    android.util.Log.d("ObsIA", "RoutineRule [${rule.id}] con [$keyword]")
                     return RoutineRuleMatch(
                         id = rule.id,
                         context = rule.context,
