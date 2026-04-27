@@ -1,74 +1,92 @@
-# ObsIA: IA Conversacional Offline para Apoyo Clínico
+# ObsIA: Offline Conversational AI for Clinical Support
 
-**ObsIA** es un MVP de inteligencia artificial conversacional diseñado para operar totalmente **offline** en dispositivos móviles. Su objetivo principal es brindar apoyo a equipos clínicos en obstetricia y salud materna, especialmente en contextos de atención inmediata donde la conectividad es limitada.
-
-## Propósito del Proyecto
-
-El sistema funciona como una herramienta de apoyo a la decisión clínica, utilizando modelos de lenguaje locales y una base de conocimiento validada para ofrecer respuestas estructuradas y trazables.
+**ObsIA** is a Conversational AI MVP (Minimum Viable Product) designed to operate completely **offline** on mobile devices. Its primary goal is to provide decision support for clinical teams in obstetrics and maternal health, particularly in immediate care settings where connectivity is limited or non-existent.
 
 ---
 
-## Características Técnicas
+## Project Purpose
 
-- **Chat Clínico Offline:** Procesamiento de texto sin necesidad de internet para garantizar disponibilidad en terreno.
-- **Motor de Reglas Clínicas:** Sistema determinístico para el manejo de escenarios críticos y urgencias.
-- **RAG (Retrieval-Augmented Generation):** Base de conocimientos clínica preindexada y embebida para reducir alucinaciones.
-- **Inferencia Local Optimizada:** Ejecución de modelos LLM mediante optimización para arquitectura ARM.
+The system serves as a clinical decision support tool, utilizing local Large Language Models (LLMs) and a validated clinical knowledge base to provide structured, traceable, and reliable responses at the point of care.
 
 ---
 
-## Limitaciones del Proyecto
+## Technical Features
 
-Dado que **ObsIA** se ejecuta en un entorno móvil offline y maneja información sensible, existen restricciones importantes:
-
-### 1. Alcance Clínico
-
-- **No es un sistema de diagnóstico:** El software se define exclusivamente como una herramienta de apoyo a la decisión clínica, no como un sustituto del diagnóstico profesional autónomo.
-- **Base de Conocimiento:** Las respuestas están limitadas a la base de conocimiento clínica cargada y versionada en el sistema.
-
-### 2. Restricciones Técnicas (Hardware)
-
-- **Capacidad del Modelo:** Debido al uso en dispositivos móviles, el modelo está limitado a aproximadamente 1B de parámetros para asegurar la viabilidad técnica.
-- **Recursos del Dispositivo:** El rendimiento está sujeto a limitaciones severas de memoria RAM, capacidad de procesamiento (CPU) y consumo de batería del celular.
-- **Optimización Extrema:** La necesidad de ejecución offline requiere una cuantización y optimización agresiva del modelo y del sistema RAG.
-
-### 3. Implementación y Entorno
-
-- **Diversidad de Dispositivos:** El correcto funcionamiento puede variar según el hardware del fabricante, requiriendo un esfuerzo mayor de pruebas multidispositivo.
-- **Actualizaciones:** Al ser una aplicación estrictamente offline, las actualizaciones de la base de conocimiento requieren una reinstalación o actualización manual del paquete de datos.
+- **Offline Clinical Chat:** Full text processing without internet requirements to ensure 100% availability in the field.
+- **Clinical Rule Engine:** A deterministic system for handling critical scenarios and emergencies with high reliability.
+- **RAG (Retrieval-Augmented Generation):** A pre-indexed, embedded clinical knowledge base that reduces model hallucinations by anchoring responses in medical literature.
+- **Optimized Local Inference:** High-performance execution of LLMs through specialized optimizations for ARM (mobile) architectures.
 
 ---
 
-## Stack Tecnológico
+## Architecture and Project Structure
 
-Para cumplir con las restricciones severas de hardware en móviles, el proyecto utiliza:
+While the standard Android project structure usually keeps everything within the `app` folder, **ObsIA** separates the high-performance AI logic to maintain a clean distinction between the mobile interface and the inference engine.
 
-- **Lenguajes:** Kotlin (Android nativo) y C/C++ para el motor de IA
-- **Interoperabilidad:** Integración mediante **JNI** (Java Native Interface).
-- **IA:** Modelos de lenguaje cuantizados (Instruct y Lama.cpp).
-- **Empaquetado:** Formato APK/OBB para instalación completa fuera de línea.
+### 📂 Directory Overview
+
+| Directory | Description |
+| --- | --- |
+| `app/` | **Android Application Layer**: Built with Kotlin. Handles the UI (Jetpack Compose), local persistence, and the orchestration of clinical rules. |
+| `Modelo/` | **AI Core Ecosystem**: This directory centralizes the intelligence of the system. |
+| `Modelo/llm/` | **Development & RAG Lab**: Contains the scripts for generating embeddings, pre-indexing clinical documents, and testing the retrieval logic. |
+| `Modelo/modeloFinal/` | **Production Inference Engine**: The high-performance C++ implementation based on `llama.cpp`. This is where the cross-compilation for mobile (ARM64) occurs. |
+
+### Why is the C++ model in `Modelo`?
+
+The project follows a "Separation of Concerns" principle:
+1.  **Development vs. Production**: The `Modelo/llm` folder is where the model is tested, quantized, and where the RAG system is developed using Python and other tools.
+2.  **Library Generation (JNI Bridge)**: The `Modelo/modeloFinal` folder contains the specific C++ source code that is compiled into a native library (.so). This library is then consumed by the Android app via **JNI (Java Native Interface)**. 
+3.  **Portability**: By keeping the AI logic in a separate C++ module, we ensure that the core engine can be optimized, updated, or even ported to other platforms without affecting the mobile application's UI/UX logic.
 
 ---
 
-## Equipo de Desarrollo
+## Project Limitations
 
-| **Miembro** | **Rol** | **Responsabilidad Principal** |
+Since **ObsIA** runs in a strictly offline mobile environment and handles sensitive clinical information, it has the following constraints:
+
+### 1. Clinical Scope
+- **Not a Diagnostic System**: The software is strictly a clinical decision support tool and is not a substitute for professional medical diagnosis.
+- **Knowledge Base Boundaries**: Responses are strictly limited to the clinical knowledge base loaded and versioned within the system.
+
+### 2. Technical Constraints (Hardware)
+- **Model Size**: Limited to models with approximately 1B to 3B parameters to ensure technical viability on standard mobile hardware.
+- **Resource Management**: Performance is highly dependent on device RAM, CPU capacity, and thermal throttling.
+- **Aggressive Optimization**: Requires 4-bit (or lower) quantization and extreme RAG optimization to maintain responsiveness.
+
+### 3. Deployment & Updates
+- **Device Diversity**: Performance may vary significantly between different hardware manufacturers.
+- **Manual Updates**: Knowledge base updates require a manual package update or app reinstallation due to the offline nature of the system.
+
+---
+
+## Tech Stack
+
+- **Languages**: Kotlin (Native Android) and C/C++ (Inference Engine).
+- **Interoperability**: **JNI** (Java Native Interface) for high-speed communication between Kotlin and C++.
+- **AI Core**: `llama.cpp` for GGUF model inference.
+- **Data Format**: Quantized models and pre-computed Faiss/Binary indexes for RAG.
+- **Build System**: Gradle (Android) and CMake (C++).
+
+---
+
+## Development Team
+
+| Member | Role | Primary Responsibility |
 | --- | --- | --- |
-| **Julián** | Frontend Developer | Interfaz de usuario (UI) y experiencia de chat en Android. |
-| **Luis** | AI Engineer/lead project | Inferencia nativa en C++, optimización del modelo y RAG. |
-| **Valentina** | Backend Developer | Orquestación, sistema RAG y lógica de negocio clínica. |
-| **Rafa** | Backend Developer/QA | Integración JNI, motor de reglas y persistencia local. |
+| **Julián** | Frontend Developer | UI/UX and Chat experience in Android. |
+| **Luis** | AI Engineer / Lead | Native C++ inference, model optimization, and RAG architecture. |
+| **Valentina** | Backend Developer | Orchestration, RAG system logic, and clinical business logic. |
+| **Rafa** | Backend/QA | JNI Integration, Rule Engine, and local persistence. |
 
 ---
 
-## 📂 Tabla de Navegación
+## 📂 Navigation Table
 
-| 🚀 Sección                                                         | 📄 Descripción                                                                                                 |
-| ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
-| 📚 [Documentación principal](./doc/index.md)                      | Carpeta principal donde se encuentra toda la documentación del proyecto.                                       |
-| 📊 [Carpeta de análisis](./doc/analysis/index.md)                          | Carpeta que contiene toda la documentación relacionada con la fase de análisis del sistema.                    |
-| 🧭 [Navegación de análisis](./doc/analysis/index.md)               | Documento de navegación hacia los requisitos funcionales y no funcionales del sistema.                         |
-| 📋 [Requisitos Funcionales](./doc/analysis/requirements-fn.md)     | Documento que describe las funcionalidades que el sistema debe proporcionar.                                   |
-| ⚙️ [Requisitos No Funcionales](./doc/analysis/requirements-nfn.md) | Documento que describe las características de calidad del sistema como rendimiento, seguridad y escalabilidad. |
-
-
+| 🚀 Section | 📄 Description |
+| --- | --- |
+| 📚 [Main Documentation](./doc/index.md) | Main folder containing all project documentation. |
+| 📊 [Analysis Folder](./doc/analysis/index.md) | Documentation related to the system analysis phase. |
+| 🧭 [Analysis Navigation](./doc/analysis/index.md) | Navigation guide for Functional and Non-Functional requirements. |
+| 📋 [Functional Requirements](./doc/analysis/requirements-fn.md) | Description of the system's core features. |
+| ⚙️ [Non-Functional Requirements](./doc/analysis/requirements-nfn.md) | Quality attributes such as performance, security, and scalability. |
