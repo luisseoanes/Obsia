@@ -1,92 +1,110 @@
-# ObsIA: Offline Conversational AI for Clinical Support
+# ObsIA: The First Fully Offline AI for Maternal & Obstetric Care
 
-**ObsIA** is a Conversational AI MVP (Minimum Viable Product) designed to operate completely **offline** on mobile devices. Its primary goal is to provide decision support for clinical teams in obstetrics and maternal health, particularly in immediate care settings where connectivity is limited or non-existent.
+![Status](https://img.shields.io/badge/Status-MVP-orange)
+![Platform](https://img.shields.io/badge/Platform-Android-green)
+![Intelligence](https://img.shields.io/badge/Engine-C%2B%2B%20%2F%20llama.cpp-blue)
+![Connectivity](https://img.shields.io/badge/Internet-Not%20Required-red)
 
----
-
-## Project Purpose
-
-The system serves as a clinical decision support tool, utilizing local Large Language Models (LLMs) and a validated clinical knowledge base to provide structured, traceable, and reliable responses at the point of care.
-
----
-
-## Technical Features
-
-- **Offline Clinical Chat:** Full text processing without internet requirements to ensure 100% availability in the field.
-- **Clinical Rule Engine:** A deterministic system for handling critical scenarios and emergencies with high reliability.
-- **RAG (Retrieval-Augmented Generation):** A pre-indexed, embedded clinical knowledge base that reduces model hallucinations by anchoring responses in medical literature.
-- **Optimized Local Inference:** High-performance execution of LLMs through specialized optimizations for ARM (mobile) architectures.
+**ObsIA** is a groundbreaking clinical decision support system designed to provide high-level AI capabilities in the most challenging environments. Built for obstetricians and maternal health teams, ObsIA operates **100% offline**, ensuring that critical medical knowledge is available even in remote areas without cellular or satellite coverage.
 
 ---
 
-## Architecture and Project Structure
+## 🌟 The Vision
 
-While the standard Android project structure usually keeps everything within the `app` folder, **ObsIA** separates the high-performance AI logic to maintain a clean distinction between the mobile interface and the inference engine.
+In rural and emergency clinical settings, every second counts. Lack of connectivity often prevents access to modern AI assistants. **ObsIA** bridges this gap by bringing the power of Large Language Models (LLMs) and Retrieval-Augmented Generation (RAG) directly into the clinician's pocket.
 
-### 📂 Directory Overview
+### Core Objectives:
+1.  **Empower Rural Healthcare**: Provide expert-level clinical support where specialists are unavailable.
+2.  **Absolute Privacy**: No data leaves the device, complying with the strictest medical data regulations.
+3.  **Instant Availability**: Zero latency from network round-trips; the AI is as fast as the local processor.
 
-| Directory | Description |
+---
+
+## 🏗️ System Architecture
+
+ObsIA uses a **Hybrid Dual-Core Architecture** to balance modern Android UI flexibility with raw C++ performance.
+
+```mermaid
+graph TD
+    subgraph "Android Application (Kotlin/Compose)"
+        UI[User Interface] --> Orchestrator[Query Orchestrator]
+        Orchestrator --> RuleEngine[Clinical Rule Engine]
+    end
+
+    subgraph "Native Inference Engine (C++/JNI)"
+        JNI[JNI Bridge] --> LlamaCpp[llama.cpp Core]
+        LlamaCpp --> RAG[RAG Retrieval System]
+        RAG --> KnowledgeBase[(Local Clinical Docs)]
+        LlamaCpp --> LLM[Quantized LLM]
+    end
+
+    Orchestrator <==> JNI
+```
+
+### 1. The Kotlin/Compose Frontend (`app/`)
+Handles the user experience, chat state management, and the **Clinical Rule Engine**. This engine acts as a deterministic safety layer, ensuring that critical emergency protocols (like Eclampsia or Postpartum Hemorrhage) are handled with 100% predictable logic before the AI even starts "thinking."
+
+### 2. The Native C++ Backend (`Modelo/`)
+This is the heart of the system. We use a customized fork of `llama.cpp` optimized for ARM64 (Android) architectures.
+- **Model Development (`Modelo/llm/`)**: This is our research lab. We use Python and specialized tools here to prepare documents, generate Faiss/Binary embeddings, and quantize the models (from FP16 to 4-bit) to fit mobile RAM constraints.
+- **Production Engine (`Modelo/modeloFinal/`)**: This folder contains the specialized C++ code that compiles into a `.so` (shared object) library. It is designed for maximum speed and efficient memory management.
+
+---
+
+## 🧠 Intelligent Pillars
+
+### 📋 Deterministic Rule Engine
+Before the LLM processes a query, a rule-based system scans for "red flag" clinical symptoms. If a life-threatening emergency is detected (e.g., severe hypertension in pregnancy), the system immediately triggers a validated clinical protocol response.
+
+### 📚 RAG (Retrieval-Augmented Generation)
+To eliminate "AI hallucinations," ObsIA doesn't rely solely on the model's training data. Instead:
+1.  **Indexing**: Clinical guides (PDFs) are chunked and converted into vector embeddings during development.
+2.  **Retrieval**: When a clinician asks a question, the system finds the most relevant text snippets from the local knowledge base.
+3.  **Generation**: The LLM uses these snippets as context to generate a response that is grounded in clinical evidence.
+
+---
+
+## 📂 Project Structure
+
+| Path | Purpose |
 | --- | --- |
-| `app/` | **Android Application Layer**: Built with Kotlin. Handles the UI (Jetpack Compose), local persistence, and the orchestration of clinical rules. |
-| `Modelo/` | **AI Core Ecosystem**: This directory centralizes the intelligence of the system. |
-| `Modelo/llm/` | **Development & RAG Lab**: Contains the scripts for generating embeddings, pre-indexing clinical documents, and testing the retrieval logic. |
-| `Modelo/modeloFinal/` | **Production Inference Engine**: The high-performance C++ implementation based on `llama.cpp`. This is where the cross-compilation for mobile (ARM64) occurs. |
-
-### Why is the C++ model in `Modelo`?
-
-The project follows a "Separation of Concerns" principle:
-1.  **Development vs. Production**: The `Modelo/llm` folder is where the model is tested, quantized, and where the RAG system is developed using Python and other tools.
-2.  **Library Generation (JNI Bridge)**: The `Modelo/modeloFinal` folder contains the specific C++ source code that is compiled into a native library (.so). This library is then consumed by the Android app via **JNI (Java Native Interface)**. 
-3.  **Portability**: By keeping the AI logic in a separate C++ module, we ensure that the core engine can be optimized, updated, or even ported to other platforms without affecting the mobile application's UI/UX logic.
+| `app/` | Source code for the Android application (Kotlin). |
+| `Modelo/` | Central hub for all AI-related logic. |
+| `Modelo/llm/` | Research scripts, RAG indexing tools, and model quantization tests. |
+| `Modelo/modeloFinal/` | Native C++ inference engine source and JNI interface. |
+| `doc/` | Comprehensive technical documentation, analysis, and design diagrams. |
 
 ---
 
-## Project Limitations
+## 🛠️ Setup & Development
 
-Since **ObsIA** runs in a strictly offline mobile environment and handles sensitive clinical information, it has the following constraints:
+### Prerequisites:
+- **Android Studio Jellyfish** (or newer).
+- **Android NDK** (Side-by-side) & **CMake**.
+- A device with at least **8GB RAM** for optimal inference (6GB minimum).
 
-### 1. Clinical Scope
-- **Not a Diagnostic System**: The software is strictly a clinical decision support tool and is not a substitute for professional medical diagnosis.
-- **Knowledge Base Boundaries**: Responses are strictly limited to the clinical knowledge base loaded and versioned within the system.
-
-### 2. Technical Constraints (Hardware)
-- **Model Size**: Limited to models with approximately 1B to 3B parameters to ensure technical viability on standard mobile hardware.
-- **Resource Management**: Performance is highly dependent on device RAM, CPU capacity, and thermal throttling.
-- **Aggressive Optimization**: Requires 4-bit (or lower) quantization and extreme RAG optimization to maintain responsiveness.
-
-### 3. Deployment & Updates
-- **Device Diversity**: Performance may vary significantly between different hardware manufacturers.
-- **Manual Updates**: Knowledge base updates require a manual package update or app reinstallation due to the offline nature of the system.
+### Build Instructions:
+1.  **Clone the Repo**: Ensure submodules are initialized.
+2.  **Native Build**: Navigate to `Modelo/modeloFinal` and run the provided build scripts or let Android Studio handle the CMake sync.
+3.  **Model Loading**: Place your quantized `.gguf` model in the `app/src/main/assets/` directory (ensure it is listed in `.gitignore` to avoid large file errors).
+4.  **Run**: Build the APK and deploy to your device.
 
 ---
 
-## Tech Stack
+## 👥 The Team
 
-- **Languages**: Kotlin (Native Android) and C/C++ (Inference Engine).
-- **Interoperability**: **JNI** (Java Native Interface) for high-speed communication between Kotlin and C++.
-- **AI Core**: `llama.cpp` for GGUF model inference.
-- **Data Format**: Quantized models and pre-computed Faiss/Binary indexes for RAG.
-- **Build System**: Gradle (Android) and CMake (C++).
-
----
-
-## Development Team
-
-| Member | Role | Primary Responsibility |
+| Name | Role | Focus |
 | --- | --- | --- |
-| **Julián** | Frontend Developer | UI/UX and Chat experience in Android. |
-| **Luis** | AI Engineer / Lead | Native C++ inference, model optimization, and RAG architecture. |
-| **Valentina** | Backend Developer | Orchestration, RAG system logic, and clinical business logic. |
-| **Rafa** | Backend/QA | JNI Integration, Rule Engine, and local persistence. |
+| **Luis** | **AI Lead & Engineer** | Native C++ optimization, JNI Bridge, and Model Architecture. |
+| **Julián** | **Lead Frontend** | UI/UX Design, Jetpack Compose, and Chat Lifecycle. |
+| **Valentina** | **Business Logic/RAG** | Clinical knowledge base indexing and RAG orchestration. |
+| **Rafa** | **Backend & QA** | Rule Engine development, persistence, and JNI integration testing. |
 
 ---
 
-## 📂 Navigation Table
+## ⚖️ Legal Disclaimer
 
-| 🚀 Section | 📄 Description |
-| --- | --- |
-| 📚 [Main Documentation](./doc/index.md) | Main folder containing all project documentation. |
-| 📊 [Analysis Folder](./doc/analysis/index.md) | Documentation related to the system analysis phase. |
-| 🧭 [Analysis Navigation](./doc/analysis/index.md) | Navigation guide for Functional and Non-Functional requirements. |
-| 📋 [Functional Requirements](./doc/analysis/requirements-fn.md) | Description of the system's core features. |
-| ⚙️ [Non-Functional Requirements](./doc/analysis/requirements-nfn.md) | Quality attributes such as performance, security, and scalability. |
+**ObsIA is a Research MVP.** It is intended for educational and clinical decision support purposes only. It is **NOT** a replacement for professional medical judgment. All generated responses should be verified against standard clinical protocols by a qualified healthcare professional.
+
+---
+*Built with ❤️ for the health of mothers and babies.*
